@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from "@/components/ui/button"
+import React from "react";
+import NavBar from "./components/NavBar";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  return (
+    <div className="flex flex-col space-y-72">
+      <NavBar />
+    </div>
+  );
+};
 
-  return (<Button className="bg-slate-700" variant="link">Button</Button>)
-
-}
-
-
-export default App
+export default App;
