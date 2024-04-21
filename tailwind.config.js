@@ -16,8 +16,10 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+
     extend: {
       colors: {
+        pmpurple: "#540B37", 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
