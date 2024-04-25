@@ -4,7 +4,7 @@ import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
 const NavBar = () => {
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
+    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 gap-2">
       <Sheet>
         <SheetTrigger asChild>
           <Button className="lg:hidden" size="icon" variant="outline">
@@ -33,18 +33,30 @@ const NavBar = () => {
           </div>
         </SheetContent>
       </Sheet>
-      <div className="ml-auto hidden space-x-6 lg:flex">
-        <Link className="font-medium hover:underline" href="#">
+
+      {/*Desktop Navbar*/}
+      <div className="flex items-center gap-5 hidden lg:flex pl-10">
+          <img src="./src/assets/logo.svg"/>
+          <div className = "flex flex-col">
+            <span className="text-pmpurple font-bold text-lg">PURE MENTORSHIP</span>
+            <p className="text-sm font-light">The path to success is not discovered alone but set ablaze together.</p>
+          </div>
+      </div>
+      <div className="ml-auto hidden space-x-6 lg:flex font-normal gap-7 pr-10">
+        <Link className="hover:underline" to="/">
           Home
         </Link>
-        <Link className="font-medium hover:underline" href="#">
-          About
+        <Link className="hover:underline" to="/About">
+          About Us
         </Link>
-        <Link className="font-medium hover:underline" href="#">
-          Services
+        <Link className="hover:underline" to="/Team">
+          Our Team
         </Link>
-        <Link className="font-medium hover:underline" href="#">
-          Contact
+        <Link className="hover:underline" to="/Blog">
+          Blog
+        </Link>
+        <Link className="hover:underline" to="/Join">
+          Join Us
         </Link>
       </div>
     </header>
