@@ -25,10 +25,13 @@ const NavBar = () => {
                   About
                 </Link>
                 <Link className="flex items-center gap-2 font-medium" to="/">
-                  Services
+                  Our Team
                 </Link>
                 <Link className="flex items-center gap-2 font-medium" to="/">
-                  Contact
+                  Blog
+                </Link>
+                <Link className="flex items-center gap-2 font-medium" to="/">
+                  Join Us
                 </Link>
               </div>
             </SheetContent>
@@ -41,7 +44,7 @@ const NavBar = () => {
               <p className="text-sm font-light">The path to success is not discovered alone but set ablaze together.</p>
             </div>
         </div>
-        <div className="ml-auto hidden space-x-6 lg:flex font-normal gap-7 pr-10">
+        <div className="ml-auto hidden space-x-6 lg:flex items-center font-normal gap-7 pr-10">
           <Link className="hover:underline" to="/">
             Home
           </Link>
@@ -54,9 +57,7 @@ const NavBar = () => {
           <Link className="hover:underline" to="/Blog">
             Blog
           </Link>
-          <Link className="hover:underline" to="/Join">
-            Join Us
-          </Link>
+          <Button className="bg-pmpurple text-white hover:bg-gray-400 hover:text-black">Join Today</Button>
         </div>
       </header>
   );

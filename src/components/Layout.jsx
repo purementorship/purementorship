@@ -26,6 +26,7 @@ import Microsoft from "@/assets/microsoft";
 import Exonmobil from "@/assets/exonmobil";
 import Amazon from "@/assets/amazon";
 import Rmi from "@/assets/rmi";
+import LeftBush from "@/assets/leftbush";
 
 export default function Layout() {
   return (
@@ -114,19 +115,19 @@ export default function Layout() {
       </section>
 
       {/* PAGE 2: LOGO GARDEN */}
-      <section className="flex items-center justify-center bg-gray-100 snap-start">
-        <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 border border-red-300 m-96">
+      <section className="flex items-center justify-center bg-gray-100 snap-start lg:h-screen">
+        <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 m-10 lg:m-96">
           <h2 className="text-center text-3xl pb-10 lg:pb-24">
             Our mentors have worked with:
           </h2>
-          <div className="grid justify-items-center lg:flex lg:flex-row pb-5 gap-10 border border-red-400 w-full justify-center items-center gap-20">
+          <div className="grid justify-items-center lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20">
             <Aws />
             <Lockhead />
             <Paloalto />
             <Nasa />
             <Nvidia />
           </div>
-          <div className="grid justify-items-center lg:flex lg:flex-row justify-center gap-10 border border-red-400 w-full items-center gap-20">
+          <div className="grid justify-items-center lg:flex lg:flex-row justify-center w-full items-center gap-20">
             <Microsoft />
             <Exonmobil />
             <Amazon />
@@ -135,21 +136,137 @@ export default function Layout() {
         </div>
       </section>
 
-      {/* PAGE 3: SUCCESS STORIES / QUOTES */}
-      <section className="flex items-center justify-center h-screen bg-white snap-start">
-        <div className="container max-w-5xl px-4 md:px-6">
-          <p>Section 3</p>
+     {/* PAGE 3: SUCCESS STORIES / QUOTES */}
+      <section className="flex items-center justify-center h-screen bg-pmpurple snap-start">
+        <div className="container w-full px-4 md:px-6">
+          <div className="relative h-[1000px] w-full overflow-hidden">
+            <Carousel className="absolute inset-0 flex h-full w-full items-center justify-center">
+              <CarouselContent>
+                <CarouselItem className="flex justify-center">
+                  <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
+                    <h2 className="text-3xl font-bold text-white">"[Mentorship] is really important because giving out your experience and knowledge of how you're able to tap into the industry is a pure sense of giving back to the community!"Unleash Your Creativity</h2>
+                    <p className="text-lg text-gray-500 dark:text-gray-400">-Arish B., Mentor</p>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="flex h-full w-full flex-col items-center justify-center space-y-2 p-6">
+                    <h2 className="text-3xl font-bold text-white">Quote #2</h2>
+                    <p className="text-lg text-gray-500 dark:text-gray-400">Bottom text.</p>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="flex h-full w-full flex-col items-center justify-center space-y-2 p-6">
+                    <h2 className="text-3xl font-bold text-white">Quote #3</h2>
+                    <p className="text-lg text-gray-500 dark:text-gray-400">
+                      Bottom text.
+                    </p>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full bg-white/50 p-2 text-gray-900 shadow-md transition-all hover:bg-white dark:bg-gray-950/50 dark:text-gray-50 dark:hover:bg-gray-800">
+                <ChevronLeftIcon className="h-5 w-5" />
+              </CarouselPrevious>
+              <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-white/50 p-2 text-gray-900 shadow-md transition-all hover:bg-white dark:bg-gray-950/50 dark:text-gray-50 dark:hover:bg-gray-800">
+                <ChevronRightIcon className="h-5 w-5" />
+              </CarouselNext>
+            </Carousel>
+          </div>
         </div>
       </section>
 
       {/* PAGE 4: FOOTER */}
       <section className="flex items-center justify-center h-screen bg-gray-100 snap-start">
-        <div className="container max-w-5xl px-4 md:px-6">
-          <p>FOOTER</p>
+        <footer className="bg-gray-100 dark:bg-gray-800 py-8">
+        <div className="container max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div>
+            <Link className="flex items-center space-x-2" href="#">
+              <img
+                alt="Logo"
+                className="text-gray-900 dark:text-gray-50"
+                height={24}
+                src="./src/assets/logo.svg"
+                style={{
+                  aspectRatio: "24/24",
+                  objectFit: "cover",
+                }}
+                width={24}
+              />
+              <span className="text-lg font-bold text-pmpurple">Pure Mentorship</span>
+            </Link>
+          </div>
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 lg:pl-20 lg:pr-20">
+            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
+              Home
+            </Link>
+            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
+              About
+            </Link>
+            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
+              Services
+            </Link>
+            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
+              Contact
+            </Link>
+          </div>
+          <div className="flex items-center space-x-8">
+            <a href="https://www.linkedin.com/company/pure-mentorship/mycompany/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+              <LinkedinIcon className="h-6 w-6" />
+            </a>
+            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to={{pathname: "https://www.linkedin.com/company/pure-mentorship/mycompany/"}}>
+              <InstagramIcon className="h-6 w-6" />
+            </Link>
+          </div>
+          <div>
+            <p className="text-sm text-gray-500 dark:text-gray-400 lg:pl-10">© 2024 Pure Mentorship. All rights reserved.</p>
+          </div>
         </div>
+    </footer>
       </section>
     </div>
   );
+}
+
+function InstagramIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  )
+}
+
+
+function LinkedinIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
 }
 
 function ChevronLeftIcon(props) {
