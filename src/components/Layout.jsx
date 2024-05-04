@@ -15,15 +15,21 @@ import {
   Card,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CirclePlay } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
-import { AWS, LM, PALO, NASA, NVIDIA, MICROSOFT, EXON, AMAZON, RMI } from '@/assets/LogoGarden';
+import { CirclePlay } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Lockhead from "@/assets/lockhead";
+import Aws from "@/assets/aws";
+import Paloalto from "@/assets/paloalto";
+import Nasa from "@/assets/nasa";
+import Nvidia from "@/assets/nvidia";
+import Microsoft from "@/assets/microsoft";
+import Exonmobil from "@/assets/exonmobil";
+import Amazon from "@/assets/amazon";
+import Rmi from "@/assets/rmi";
 
 export default function Layout() {
   return (
-
     <div className="flex flex-col h-screen overflow-auto snap-y snap-mandatory">
-
       {/* PAGE 1: WELCOME */}
       <section className="flex items-center justify-center h-screen snap-start">
         <Carousel className="w-full">
@@ -55,12 +61,19 @@ export default function Layout() {
                       support - free of charge!
                     </p>
                   </div>
-                  
+
                   <div className="flex flex-col items-center lg:items-start">
-                    <Button className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400">Join Today</Button>
+                    <Button className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400">
+                      Join Today
+                    </Button>
                     <div className="flex pt-1 items-center">
-                    <Button variant="link" className="text-pmpurplelight font-bold mr-0 lg:mx-14 lg:mr-1 px-1">LEARN MORE</Button>
-                    <ArrowRight className="text-pmpurplelight"/>
+                      <Button
+                        variant="link"
+                        className="text-pmpurplelight font-bold mr-0 lg:mx-14 lg:mr-1 px-1"
+                      >
+                        LEARN MORE
+                      </Button>
+                      <ArrowRight className="text-pmpurplelight" />
                     </div>
                   </div>
                 </div>
@@ -101,13 +114,24 @@ export default function Layout() {
       </section>
 
       {/* PAGE 2: LOGO GARDEN */}
-      <section className="flex items-center justify-center h-screen bg-gray-100 snap-start">
+      <section className="flex items-center justify-center bg-gray-100 snap-start">
         <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 border border-red-300 m-96">
-          <h2 className="text-center text-3xl pb-10 lg:pb-24">Our mentors have worked with:</h2>
-          <div className="flex flex-row pb-5 gap-10 border border-red-400 w-full justify-center">
-            <AWS /><AWS/><AWS /><AWS /><AWS />
+          <h2 className="text-center text-3xl pb-10 lg:pb-24">
+            Our mentors have worked with:
+          </h2>
+          <div className="grid justify-items-center lg:flex lg:flex-row pb-5 gap-10 border border-red-400 w-full justify-center items-center gap-20">
+            <Aws />
+            <Lockhead />
+            <Paloalto />
+            <Nasa />
+            <Nvidia />
           </div>
-          <div className="flex flex-row justify-center gap-10 border border-red-400 w-full"><AWS /><AWS /><AWS /><AWS /></div>
+          <div className="grid justify-items-center lg:flex lg:flex-row justify-center gap-10 border border-red-400 w-full items-center gap-20">
+            <Microsoft />
+            <Exonmobil />
+            <Amazon />
+            <Rmi />
+          </div>
         </div>
       </section>
 
