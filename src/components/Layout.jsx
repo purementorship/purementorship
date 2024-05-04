@@ -34,8 +34,10 @@ export default function Layout() {
                   className="h-full w-full object-cover"
                   src="./src/assets/homepage.jpg"
                 />
-
                 <div className="flex flex-col absolute lg:w-2/5 gap-3">
+                  <div className="w-full h-0.5">
+                    <div className="w-full h-1.5 bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
+                  </div>
                   <h1 className="text-5xl text-center lg:text-left mx-14">
                     Reach the highest
                   </h1>
@@ -103,7 +105,7 @@ export default function Layout() {
         <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 border border-red-300 m-96">
           <h2 className="text-center text-3xl pb-10 lg:pb-24">Our mentors have worked with:</h2>
           <div className="flex flex-row pb-5 gap-10 border border-red-400 w-full justify-center">
-            <AWS /><AWS /><AWS /><AWS /><AWS />
+            <AWS /><AWS/><AWS /><AWS /><AWS />
           </div>
           <div className="flex flex-row justify-center gap-10 border border-red-400 w-full"><AWS /><AWS /><AWS /><AWS /></div>
         </div>
