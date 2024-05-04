@@ -136,7 +136,7 @@ export default function Layout() {
         </div>
       </section>
 
-     {/* PAGE 3: SUCCESS STORIES / QUOTES */}
+      {/* PAGE 3: SUCCESS STORIES / QUOTES */}
       <section className="flex items-center justify-center h-screen bg-pmpurple snap-start">
         <div className="container w-full px-4 md:px-6">
           <div className="relative h-[1000px] w-full overflow-hidden">
@@ -144,14 +144,23 @@ export default function Layout() {
               <CarouselContent>
                 <CarouselItem className="flex justify-center">
                   <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">"[Mentorship] is really important because giving out your experience and knowledge of how you're able to tap into the industry is a pure sense of giving back to the community!"Unleash Your Creativity</h2>
-                    <p className="text-lg text-gray-500 dark:text-gray-400">-Arish B., Mentor</p>
+                    <h2 className="text-3xl font-bold text-white">
+                      "[Mentorship] is really important because giving out your
+                      experience and knowledge of how you're able to tap into
+                      the industry is a pure sense of giving back to the
+                      community!"Unleash Your Creativity
+                    </h2>
+                    <p className="text-lg text-gray-500 dark:text-gray-400">
+                      -Arish B., Mentor
+                    </p>
                   </div>
                 </CarouselItem>
                 <CarouselItem>
                   <div className="flex h-full w-full flex-col items-center justify-center space-y-2 p-6">
                     <h2 className="text-3xl font-bold text-white">Quote #2</h2>
-                    <p className="text-lg text-gray-500 dark:text-gray-400">Bottom text.</p>
+                    <p className="text-lg text-gray-500 dark:text-gray-400">
+                      Bottom text.
+                    </p>
                   </div>
                 </CarouselItem>
                 <CarouselItem>
@@ -177,50 +186,74 @@ export default function Layout() {
       {/* PAGE 4: FOOTER */}
       <section className="flex items-center justify-center h-screen bg-gray-100 snap-start">
         <footer className="bg-gray-100 dark:bg-gray-800 py-8">
-        <div className="container max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div>
-            <Link className="flex items-center space-x-2" href="#">
-              <img
-                alt="Logo"
-                className="text-gray-900 dark:text-gray-50"
-                height={24}
-                src="./src/assets/logo.svg"
-                style={{
-                  aspectRatio: "24/24",
-                  objectFit: "cover",
-                }}
-                width={24}
-              />
-              <span className="text-lg font-bold text-pmpurple">Pure Mentorship</span>
-            </Link>
+          <div className="container max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+              <Link className="flex items-center space-x-2" href="#">
+                <img
+                  alt="Logo"
+                  className="text-gray-900 dark:text-gray-50"
+                  height={24}
+                  src="./src/assets/logo.svg"
+                  style={{
+                    aspectRatio: "24/24",
+                    objectFit: "cover",
+                  }}
+                  width={24}
+                />
+                <span className="text-lg font-bold text-pmpurple">
+                  Pure Mentorship
+                </span>
+              </Link>
+            </div>
+            <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 lg:pl-20 lg:pr-20">
+              <Link
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                href="#"
+              >
+                Home
+              </Link>
+              <Link
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                href="#"
+              >
+                About
+              </Link>
+              <Link
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                href="#"
+              >
+                Services
+              </Link>
+              <Link
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                href="#"
+              >
+                Contact
+              </Link>
+            </div>
+            <div className="flex items-center space-x-8">
+              <a
+                href="https://www.linkedin.com/company/pure-mentorship/mycompany/"
+                target="_blank"
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+              >
+                <LinkedinIcon className="h-6 w-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/purementorship/"
+                target="_blank"
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+              >
+                <InstagramIcon className="h-6 w-6" />
+              </a>
+            </div>
+            <div>
+              <p className="text-sm text-gray-500 dark:text-gray-400 lg:pl-10">
+                © 2024 Pure Mentorship. All rights reserved.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 lg:pl-20 lg:pr-20">
-            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
-              Home
-            </Link>
-            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
-              About
-            </Link>
-            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
-              Services
-            </Link>
-            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" href="#">
-              Contact
-            </Link>
-          </div>
-          <div className="flex items-center space-x-8">
-            <a href="https://www.linkedin.com/company/pure-mentorship/mycompany/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
-              <LinkedinIcon className="h-6 w-6" />
-            </a>
-            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to={{pathname: "https://www.linkedin.com/company/pure-mentorship/mycompany/"}}>
-              <InstagramIcon className="h-6 w-6" />
-            </Link>
-          </div>
-          <div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 lg:pl-10">© 2024 Pure Mentorship. All rights reserved.</p>
-          </div>
-        </div>
-    </footer>
+        </footer>
       </section>
     </div>
   );
@@ -244,9 +277,8 @@ function InstagramIcon(props) {
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
       <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
     </svg>
-  )
+  );
 }
-
 
 function LinkedinIcon(props) {
   return (
@@ -266,7 +298,7 @@ function LinkedinIcon(props) {
       <rect width="4" height="12" x="2" y="9" />
       <circle cx="4" cy="4" r="2" />
     </svg>
-  )
+  );
 }
 
 function ChevronLeftIcon(props) {
@@ -303,47 +335,6 @@ function ChevronRightIcon(props) {
       strokeLinejoin="round"
     >
       <path d="m9 18 6-6-6-6" />
-    </svg>
-  );
-}
-
-function CircleCheckIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="m9 12 2 2 4-4" />
-    </svg>
-  );
-}
-
-function CircleXIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="m15 9-6 6" />
-      <path d="m9 9 6 6" />
     </svg>
   );
 }
