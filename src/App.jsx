@@ -1,12 +1,11 @@
-import React from "react";
 import NavBar from "@/components/NavBar";
-import Layout from "@/components/Layout";
+import HomePage from "@/routes/HomePage";
 
 const App = () => {
   return (
     <div className="flex flex-col">
       <NavBar />
-      <Layout />
+      <HomePage />
     </div>
   );
 };

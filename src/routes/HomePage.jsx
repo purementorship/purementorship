@@ -6,16 +6,7 @@ import {
   CarouselNext,
   Carousel,
 } from "@/components/ui/carousel";
-import {
-  CardTitle,
-  CardDescription,
-  CardHeader,
-  CardContent,
-  CardFooter,
-  Card,
-} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CirclePlay } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import Lockhead from "@/assets/lockhead";
 import Aws from "@/assets/aws";
@@ -26,9 +17,23 @@ import Microsoft from "@/assets/microsoft";
 import Exonmobil from "@/assets/exonmobil";
 import Amazon from "@/assets/amazon";
 import Rmi from "@/assets/rmi";
-import LeftBush from "@/assets/leftbush";
+import { motion } from "framer-motion";
 
-export default function Layout() {
+export default function HomePage() {
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05,
+      },
+    },
+  };
+
   return (
     <div className="flex flex-col h-screen overflow-auto snap-y snap-mandatory">
       {/* PAGE 1: WELCOME */}
@@ -120,19 +125,30 @@ export default function Layout() {
           <h2 className="text-center text-3xl pb-10 lg:pb-24">
             Our mentors have worked with:
           </h2>
-          <div className="grid justify-items-center lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={fadeInAnimationVariants}
+            className="grid justify-items-center lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20"
+            renderInlineStyles
+          >
             <Aws />
             <Lockhead />
             <Paloalto />
             <Nasa />
             <Nvidia />
-          </div>
-          <div className="grid justify-items-center lg:flex lg:flex-row justify-center w-full items-center gap-20">
+          </motion.div>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={fadeInAnimationVariants}
+            className="grid justify-items-center lg:flex lg:flex-row justify-center w-full items-center gap-20"
+          >
             <Microsoft />
             <Exonmobil />
             <Amazon />
             <Rmi />
-          </div>
+          </motion.div>
         </div>
       </section>
 

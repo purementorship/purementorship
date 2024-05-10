@@ -1,10 +1,10 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
 const NavBar = () => {
   return (
-    <header className="flex h-32 w-full shrink-0 items-center px-4 md:px-6 gap-2 shadow-2xl relative">
+    <header className="flex h-24 w-full shrink-0 items-center px-4 md:px-6 gap-2 shadow-2xl relative">
       {/*Desktop Navbar*/}
       <div className="items-center flex gap-5 pl-10">
         <img src="./src/assets/logo.svg" />
