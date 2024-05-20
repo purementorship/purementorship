@@ -18,6 +18,12 @@ import Exonmobil from "@/assets/exonmobil";
 import Amazon from "@/assets/amazon";
 import Rmi from "@/assets/rmi";
 import { motion } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function HomePage() {
   const fadeInAnimationVariants = {
@@ -29,13 +35,13 @@ export default function HomePage() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.05,
+        delay: 0.5,
       },
     },
   };
 
   return (
-    <div className="flex flex-col h-screen overflow-auto snap-y snap-mandatory">
+    <div className="flex flex-col h-screen snap-y snap-mandatory">
       {/* PAGE 1: WELCOME */}
       <section className="flex items-center justify-center h-screen snap-start">
         <Carousel className="w-full">
@@ -120,7 +126,7 @@ export default function HomePage() {
       </section>
 
       {/* PAGE 2: LOGO GARDEN */}
-      <section className="flex items-center justify-center bg-gray-100 snap-start lg:h-screen">
+      <section className="flex items-center justify-center bg-gray-100 snap-start">
         <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 m-10 lg:m-96">
           <h2 className="text-center text-3xl pb-10 lg:pb-24">
             Our mentors have worked with:
@@ -130,7 +136,6 @@ export default function HomePage() {
             whileInView="animate"
             variants={fadeInAnimationVariants}
             className="grid justify-items-center lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20"
-            renderInlineStyles
           >
             <Aws />
             <Lockhead />
@@ -153,7 +158,7 @@ export default function HomePage() {
       </section>
 
       {/* PAGE 3: SUCCESS STORIES / QUOTES */}
-      <section className="flex items-center justify-center h-screen bg-pmpurple snap-start">
+      <section className="flex items-center justify-center min-h-screen bg-pmpurple snap-start">
         <div className="container w-full px-4 md:px-6">
           <div className="relative h-[1000px] w-full overflow-hidden">
             <Carousel className="absolute inset-0 flex h-full w-full items-center justify-center">
@@ -196,6 +201,92 @@ export default function HomePage() {
               </CarouselNext>
             </Carousel>
           </div>
+        </div>
+      </section>
+
+      {/* PAGE 4: FAQs */}
+      <section className="flex flex-col items-center justify-start snap-start pt-20 pb-20 md:pt-32 md:pb-32">
+        <div className="container mx-auto max-w-6xl px-4 md:px-12">
+          <h1 className="text-4xl font-bold">FAQs</h1>
+
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left">
+                What is the time commitment needed to be a mentor?
+              </AccordionTrigger>
+              <AccordionContent className="text-pmpurple italic">
+                Mentors are paired with a mentee based on their schedule and are
+                required to meet with their mentee at least biweekly for an hour
+                over the course of 1 year.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left">
+                How will a mentee get matched to the right mentor?
+              </AccordionTrigger>
+              <AccordionContent className="text-pmpurple italic">
+                Each mentee and mentor meets with the founder in order to gain a
+                thorough understanding of their profiles and where help is
+                needed. Each pairing is made based off compatibility and
+                interests to ensure the mentee is getting the right support &
+                resources from the right person.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left">
+                What is the internship program like?
+              </AccordionTrigger>
+              <AccordionContent className="text-pmpurple italic">
+                Each intern designs their own experience by deciding what
+                project they will work on and what skills they will employ.
+                Interns may choose to continue with the team after a successful
+                completion of their intern term. All interns work very closely
+                with the founder for their projects and have lots of autonomy to
+                create and deliver.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-left">
+                How does mentorship benefit young students?
+              </AccordionTrigger>
+              <AccordionContent className="text-pmpurple italic">
+                We encourage students to succeed in school. “A vast majority of
+                educators — 95 % — say every student can benefit from having a
+                one-on-one mentor, according to a recent survey of 1,418 grade
+                4-12 teachers from nonprofit Gradient Learning. Additionally,
+                82% said mentoring improves academic outcomes, and 83% said it
+                helps students learn skills that support success” - K12Dive
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-left">
+                How does mentorship benefit young professionals?
+              </AccordionTrigger>
+              <AccordionContent className="text-pmpurple italic">
+                We give students the confidence to achieve in their careers.
+                “Cornell University’s School of Industrial and Labor Relations
+                found that mentoring programs boosted minority representation at
+                the management level by 9% to 24% (compared to -2% to 18% with
+                other diversity initiatives). The same study found that
+                mentoring programs also dramatically improved promotion and
+                retention rates for minorities and women—15% to 38% as compared
+                to non-mentored employees.” - Mentor Resources
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="text-left">
+                Will there be in-person mentoring?
+              </AccordionTrigger>
+              <AccordionContent className="text-pmpurple italic">
+                Currently we operate solely online.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
