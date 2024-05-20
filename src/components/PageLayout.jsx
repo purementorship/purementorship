@@ -1,14 +1,14 @@
-import { NavBar } from "@/components/NavBar";
-import { Footer } from "@/components/Footer";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
-const PageLayout = ({children}) => {
-    return (
-        <div>
-            <NavBar />
-            { children }
-            <Footer />
-        </div>
-    );
-}
+const PageLayout = ({ children, className }) => {
+  return (
+    <div className={className}>
+      <NavBar />
+      {children}
+      <Footer />
+    </div>
+  );
+};
 
 export default PageLayout;
