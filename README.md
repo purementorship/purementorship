@@ -29,3 +29,10 @@
 </div>
 
 ###
+
+## Authors
+
+- [@Cole Hartman](https://github.com/Cole-Hartman)
+- [@Noah Kim](https://github.com/boatnoah)
+
+
