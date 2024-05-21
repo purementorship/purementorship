@@ -24,6 +24,7 @@ module.exports = {
       colors: {
         pmpurple: "#540B37",
         pmpurplelight: "#C197B0",
+        pmorange: "#EC7850",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
