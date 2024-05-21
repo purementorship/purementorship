@@ -36,7 +36,7 @@ const NavBar = () => {
               <Link className="flex items-center gap-2 font-medium" to="/">
                 Home
               </Link>
-              <Link className="flex items-center gap-2 font-medium" to="/">
+              <Link className="flex items-center gap-2 font-medium" to="/AboutUs">
                 About
               </Link>
               <Link className="flex items-center gap-2 font-medium" to="/">
@@ -56,7 +56,7 @@ const NavBar = () => {
         <Link className="hover:underline" to="/">
           Home
         </Link>
-        <Link className="hover:underline" to="/About">
+        <Link className="hover:underline" to="/AboutUs">
           About Us
         </Link>
         <Link className="hover:underline" to="/Team">
