@@ -12,67 +12,78 @@ import {
 const Team = () => {
   const mentors = [
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Aadity J.",
+      picture: "./src/assets/mentors/aadity.png",
+      school: "University of Maryland",
+      domain: "Data Analytics, Information Systems, Aerospace",
     },
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Anisha K.",
+      picture: "./src/assets/mentors/anisha.png",
+      school: "Duke University",
+      domain: "Engineering Management, Marketing",
     },
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Esther C.",
+      picture: "./src/assets/mentors/esther.png",
+      school: "Calflin University",
+      domain: "Software Engineering, AI/Machine Learning",
     },
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Haruna O.",
+      picture: "./src/assets/mentors/haruna.png",
+      school: "Software Engineer",
+      domain: "Software Engineering, AI/Machine Learning",
     },
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Joseph B.",
+      picture: "./src/assets/mentors/joseph.png",
+      school: "San Jose State University",
+      domain: "Data Analytics, Information Systems, Aerospace",
     },
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Leo S.",
+      picture: "./src/assets/mentors/leo.png",
+      school: "Virginia Tech",
+      domain: "Data Analytics, Information Systems, Aerospace",
     },
 
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Marcos V.",
+      picture: "./src/assets/mentors/marcos.png",
+      school: "San Jose State University",
+      domain: "Data Analytics, Information Systems, Aerospace",
     },
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Michael S.",
+      picture: "./src/assets/mentors/michael.png",
+      school: "San Jose State University",
+      domain: "Software Engineering, AI/Machine Learning",
     },
     {
-      name: "Bob Jones",
-      picture: "",
-      school: "Harvard",
-      major: "Computer Science",
+      name: "Riddhi K.",
+      picture: "./src/assets/mentors/riddhi.png",
+      school: "University of Nevada",
+      domain: "Engineering Management, Marketing",
+    },
+    {
+      name: "Romina T.",
+      picture: "./src/assets/mentors/romina.png",
+      school: "Carnegie Mellon University",
+      domain: "Data Analytics, Information Systems, Aerospace",
+    },
+    {
+      name: "Thenu S.",
+      picture: "./src/assets/mentors/thenu.png",
+      school: "San Jose State University",
+      domain: "Engineering Management, Marketing",
     },
   ];
   return (
-    <PageLayout>
-      <section className="bg-pmorange h-1/4 flex justify-center items-center">
-        <div className="text-white p-10 w-3/4 space-y-9">
+    <PageLayout className="flex flex-col">
+      <section className="bg-pmorange flex justify-center items-center py-20">
+        <div className="flex flex-col text-white p-6 md:p-10 w-full md:w-3/4 gap-6 md:gap-3">
           <h1 className="text-4xl font-bold">Mentors</h1>
-
           <p className="font-light">
             Meet our mentors! Mentors play a crucial role in helping individuals
             achieve their personal and professional goals. That's why we are
@@ -80,7 +91,6 @@ const Team = () => {
             chosen for their grit, compassion, achievements, and—most
             importantly—their intention to give back.
           </p>
-
           <p>
             We have organized our mentors alphabetically below. We encourage you
             to click on each mentor's LinkedIn profile to learn more about their
@@ -93,25 +103,33 @@ const Team = () => {
             Interested in becoming a mentor at Pure Mentorship? Click the button
             below to be redirected to the latest version of our application:
           </p>
-
-          <Button className="font-light bg-white text-pmpurple hover:bg-gray-200">
+          <Button className="font-light bg-white text-pmpurple hover:bg-gray-200 w-40">
             Apply Today!
           </Button>
         </div>
       </section>
-      <section>
-        <div className="c">
+      <section className="flex items-center justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-6 md:p-10 w-full md:w-3/4">
           {mentors.map((mentor, i) => (
-            <Card key={i}>
+            <Card key={i} className="hover:shadow-lg">
               <CardHeader>
-                <CardTitle>{mentor.picture}</CardTitle>
+                <div className="w-full h-full overflow-hidden rounded-t-lg">
+                  <img
+                    src={mentor.picture}
+                    className="w-full h-full object-cover object-bottom"
+                    alt={`${mentor.name}'s picture`}
+                  />
+                </div>
               </CardHeader>
-              <CardContent>
-                <CardTitle>{mentor.name}</CardTitle>
-                <CardDescription>{mentor.school}</CardDescription>
-                <CardDescription>{mentor.major}</CardDescription>
+              <CardContent className="text-center">
+                <CardTitle className="text-lg font-semibold">
+                  {mentor.name}
+                </CardTitle>
+                <CardDescription>
+                  <p className="text-sm text-gray-600">{mentor.school}</p>
+                  <p className="text-sm text-gray-600">{mentor.domain}</p>
+                </CardDescription>
               </CardContent>
-              <CardFooter></CardFooter>
             </Card>
           ))}
         </div>

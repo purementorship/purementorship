@@ -137,7 +137,7 @@ export default function HomePage() {
             initial="initial"
             whileInView="animate"
             variants={fadeInAnimationVariants}
-            className="grid justify-items-center lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20"
+            className="grid lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20"
           >
             <Aws />
             <Lockhead />
