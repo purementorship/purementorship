@@ -53,7 +53,7 @@ export default function AboutUs() {
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <img
             alt="Image"
-            className="mx-auto aspect-square w-full max-w-md overflow-hidden rounded-xl object-cover"
+            className="mx-auto aspect-square w-full max-w-max overflow-hidden rounded-xl object-cover"
             height={550}
             src="./src/assets/happy-student.jpg"
             width={550}
@@ -91,7 +91,7 @@ export default function AboutUs() {
       {/* MEET THE FOUNDER  */}
       <div className="flex w-full min-h-[100dvh] items-center justify-center bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25">
         <div className="container mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 px-4 md:flex-row md:gap-16">
-          <div className="flex flex-col items-start gap-4">
+          <div className="flex flex-col items-start pb-9 md:pb-0 text-md md:text-lg w-full max-w-max gap-4">
             <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-5xl lg:text-6xl">
               Meet the founder
             </h1>
@@ -108,7 +108,7 @@ export default function AboutUs() {
           </div>
           <img
             alt="Hero Image"
-            className="aspect-square w-full max-w-md overflow-hidden rounded-xl object-cover"
+            className="aspect-square flex-auto w-11/12 max-w-max overflow-hidden rounded-xl object-cover"
             height={550}
             src="./src/assets/FounderHeadshot.png"
             width={550}
