@@ -36,7 +36,7 @@ const NavBar = () => {
               <Link className="flex items-center gap-2 font-medium" to="/">
                 Home
               </Link>
-              <Link className="flex items-center gap-2 font-medium" to="/">
+              <Link className="flex items-center gap-2 font-medium" to="/AboutUs">
                 About
               </Link>
               <Link className="flex items-center gap-2 font-medium" to="/">

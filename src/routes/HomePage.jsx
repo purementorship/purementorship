@@ -44,7 +44,6 @@ export default function HomePage() {
   return (
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
       {/* PAGE 1: WELCOME */}
-
       <section className="flex items-center justify-center h-screen snap-start">
         <Carousel className="w-full">
           <CarouselContent>
