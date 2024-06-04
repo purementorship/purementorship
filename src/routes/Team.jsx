@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 const Team = () => {
   const mentors = [
@@ -78,6 +79,21 @@ const Team = () => {
       domain: "Engineering Management, Marketing",
     },
   ];
+
+  const fadeInAnimationsVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index,
+      },
+    }),
+  };
+
   return (
     <PageLayout className="flex flex-col">
       <section className="bg-pmorange flex justify-center items-center py-20">
@@ -110,26 +126,37 @@ const Team = () => {
       <section className="flex items-center justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-6 md:p-10 w-full md:w-3/4">
           {mentors.map((mentor, i) => (
-            <Card key={i} className="hover:shadow-lg">
-              <CardHeader>
-                <div className="w-full h-full overflow-hidden rounded-t-lg">
-                  <img
-                    src={mentor.picture}
-                    className="w-full h-full object-cover object-bottom"
-                    alt={`${mentor.name}'s picture`}
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardTitle className="text-lg font-semibold">
-                  {mentor.name}
-                </CardTitle>
-                <CardDescription>
-                  <p className="text-sm text-gray-600">{mentor.school}</p>
-                  <p className="text-sm text-gray-600">{mentor.domain}</p>
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <motion.div
+              key={i}
+              variants={fadeInAnimationsVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={i}
+            >
+              <Card className="hover:shadow-lg">
+                <CardHeader>
+                  <div className="w-full h-full overflow-hidden rounded-t-lg">
+                    <img
+                      src={mentor.picture}
+                      className="w-full h-full object-cover object-bottom"
+                      alt={`${mentor.name}'s picture`}
+                    />
+                  </div>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <CardTitle className="text-lg font-semibold">
+                    {mentor.name}
+                  </CardTitle>
+                  <CardDescription>
+                    <p className="text-sm text-gray-600">{mentor.school}</p>
+                    <p className="text-sm text-gray-600">{mentor.domain}</p>
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </section>
