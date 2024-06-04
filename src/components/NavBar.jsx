@@ -36,8 +36,17 @@ const NavBar = () => {
               <Link className="flex items-center gap-2 font-medium" to="/">
                 Home
               </Link>
-              <Link className="flex items-center gap-2 font-medium" to="/AboutUs">
+              <Link
+                className="flex items-center gap-2 font-medium"
+                to="/AboutUs"
+              >
                 About
+              </Link>
+              <Link
+                className="flex items-center gap-2 font-medium"
+                to="/Program"
+              >
+                Program
               </Link>
               <Link className="flex items-center gap-2 font-medium" to="/">
                 Our Team
@@ -58,6 +67,9 @@ const NavBar = () => {
         </Link>
         <Link className="hover:underline" to="/AboutUs">
           About Us
+        </Link>
+        <Link className="hover:underline" to="/Program">
+          Program
         </Link>
         <Link className="hover:underline" to="/Team">
           Our Team

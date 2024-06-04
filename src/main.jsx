@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutUs from "@/routes/AboutUs";
 import Team from "@/routes/Team";
+import Program from "@/routes/Program";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/Join",
     element: <AboutUs />,
+  },
+  {
+    path: "/Program",
+    element: <Program />,
   },
 ]);
 
