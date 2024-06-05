@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutUs from "@/routes/AboutUs";
 import Team from "@/routes/Team";
 import Program from "@/routes/Program";
+import JoinUs from "@/routes/JoinUs";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/Program",
     element: <Program />,
+  },
+  {
+    path: "/JoinUs",
+    element: <JoinUs />,
   },
 ]);
 
