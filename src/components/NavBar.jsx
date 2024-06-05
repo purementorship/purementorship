@@ -48,10 +48,10 @@ const NavBar = () => {
               >
                 Program
               </Link>
-              <Link className="flex items-center gap-2 font-medium" to="/">
+              <Link className="flex items-center gap-2 font-medium" to="/Team">
                 Our Team
               </Link>
-              <Link className="flex items-center gap-2 font-medium" to="/">
+              <Link className="flex items-center gap-2 font-medium" to="/Blog">
                 Blog
               </Link>
               <Link className="flex items-center gap-2 font-medium" to="/">
