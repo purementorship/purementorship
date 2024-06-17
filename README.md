@@ -8,7 +8,7 @@
 
 ###
 
-<h3 align="left">Pure Mentorship is a platform created by students, for students.</h3>
+> Pure Mentorship is a platform created by students, for students.
 
 ###
 
