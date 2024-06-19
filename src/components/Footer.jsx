@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "@/assets/logo.svg";
 const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-800 py-8">
@@ -10,7 +10,7 @@ const Footer = () => {
               alt="Logo"
               className="text-gray-900 dark:text-gray-50"
               height={24}
-              src="./src/assets/logo.svg"
+              src={logo}
               style={{
                 aspectRatio: "24/24",
                 objectFit: "cover",
