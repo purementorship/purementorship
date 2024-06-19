@@ -8,6 +8,9 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
+import aboutUsHome from "@/assets/AboutUsHome.png";
+import happyStudent from "@/assets/happy-student.jpg";
+import founderHeadshot from "@/assets/FounderHeadshot.png";
 
 export default function AboutUs() {
   const fadeInAnimationVariants = {
@@ -43,10 +46,7 @@ export default function AboutUs() {
       {/* PAGE 1: WELCOME */}
       <section className="flex items-center justify-center h-screen snap-start">
         <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0 w-full">
-          <img
-            className="h-full w-full object-cover"
-            src="./src/assets/AboutUsHome.png"
-          />
+          <img className="h-full w-full object-cover" src={aboutUsHome} />
           <div className="flex flex-col absolute lg:w-2/5 gap-3">
             <div className="w-full h-0.5">
               <div className="w-full h-1.5 hidden md:block bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
@@ -91,7 +91,7 @@ export default function AboutUs() {
               alt="Image"
               className="mx-auto aspect-square w-full max-w-max overflow-hidden rounded-xl object-cover"
               height={550}
-              src="./src/assets/happy-student.jpg"
+              src={happyStudent}
               width={550}
             />
           </motion.div>
@@ -162,7 +162,7 @@ export default function AboutUs() {
             alt="Hero Image"
             className="aspect-square flex-auto w-11/12 max-w-max overflow-hidden rounded-xl object-cover"
             height={550}
-            src="./src/assets/FounderHeadshot.png"
+            src={founderHeadshot}
             width={550}
           />
         </div>
