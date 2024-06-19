@@ -43,7 +43,8 @@ const router = createBrowserRouter([
     path: "/Program",
     element: <Program />,
   },
-]);
+],{ basename: "/purementorship/" });
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
