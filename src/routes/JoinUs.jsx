@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PageLayout from "@/components/PageLayout";
 import { motion } from "framer-motion";
+import logo from "@/assets/logo.svg";
 
 const JoinUs = () => {
   const fadeInAnimationVariants = {
@@ -54,7 +55,7 @@ const JoinUs = () => {
               </div>
             </div>
             <img
-              src="./src/assets/logo.svg"
+              src={logo}
               width="200"
               height="350"
               alt="Hero"

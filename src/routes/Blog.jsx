@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import PageLayout from "@/components/PageLayout";
 import BlogAllExpand from "@/routes/BlogAllExpand";
 import { motion } from "framer-motion";
+import blogStudents from "@/assets/BlogStudents.webp";
+import founderHeadshotCrop from "@/assets/FounderHeadshotCrop.png";
 
 export default function Blog() {
   const fadeInAnimationVariants = {
@@ -29,7 +31,7 @@ export default function Blog() {
         date: "Aug 9, 2023",
         description:
           "Now as there is a week left before our Summer Student Leaders Cohort leave the Pure Mentorship Program...",
-        image: "./src/assets/BlogStudents.webp",
+        image: blogStudents,
         link: "/BlogAllExpand#post-1",
       },
       {
@@ -93,7 +95,7 @@ export default function Blog() {
         <section className="w-full h-full">
           <div className="relative">
             <img
-              src="./src/assets/FounderHeadshotCrop.png"
+              src={founderHeadshotCrop}
               alt="Thunu Headshot"
               className="w-full"
             />

@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import PageLayout from "@/components/PageLayout";
 import BlogAllExpand from "@/routes/BlogAllExpand";
 import { motion } from "framer-motion";
+import blogStudents from "@/assets/BlogStudents.webp";
 
 export default function BlogAll() {
   const fadeInAnimationVariants = {
@@ -29,7 +30,7 @@ export default function BlogAll() {
         date: "Aug 9, 2023",
         description:
           "Now as there is a week left before our Summer Student Leaders Cohort leave the Pure Mentorship Program...",
-        image: "./src/assets/BlogStudents.webp",
+        image: blogStudents,
         link: "/BlogAllExpand#post-1",
       },
       {
@@ -114,7 +115,7 @@ export default function BlogAll() {
               >
                 <div
                   key={post.id}
-                  className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out md:mx-5 border border-red-500"
+                  className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out md:mx-5"
                 >
                   <Link
                     to={post.link}
