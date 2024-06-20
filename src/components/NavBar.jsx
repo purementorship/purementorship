@@ -29,7 +29,7 @@ const NavBar = () => {
           </SheetTrigger>
           <SheetContent side="right">
             <Link className="flex items-center gap-2" href="#">
-              <img src="./src/assets/logo.svg" className="h-6 w-6" />
+              <img src={logo} className="h-6 w-6" />
               <span className="font-semibold pt-1 text-pmpurple">
                 PURE MENTORSHIP
               </span>
