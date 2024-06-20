@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import aboutUsHome from "@/assets/AboutUsHome.png";
 import happyStudent from "@/assets/happy-student.jpg";
 import founderHeadshot from "@/assets/FounderHeadshot.png";
+import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   const fadeInAnimationVariants = {
@@ -41,6 +42,10 @@ export default function AboutUs() {
     },
   };
 
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
       {/* PAGE 1: WELCOME */}
@@ -69,9 +74,14 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="flex flex-col items-center lg:items-start">
-              <Button className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400">
-                Join Today
-              </Button>
+              <Link to="/JoinUs">
+                <Button
+                  onClick={handleClick}
+                  className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400"
+                >
+                  Join Today
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -124,8 +134,9 @@ export default function AboutUs() {
                 succeed academically and professionally.
               </p>
               <div className="flex gap-2">
-                <Button>Get Started</Button>
-                <Button variant="outline">Learn More</Button>
+                <Link to="/JoinUs">
+                  <Button onClick={handleClick}>Get Started</Button>
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -167,18 +178,18 @@ export default function AboutUs() {
           />
         </div>
       </div>
-      <footer className="bg-gray-100 py-2 px-4 dark:bg-gray-800">
+      {/* <footer className="bg-gray-100 py-2 px-4 dark:bg-gray-800">
         <div className="container mx-auto flex justify-end">
           <div className="flex gap-2">
-            <Button variant="link" to="/">
-              Home
-            </Button>
+            <Link to="/">
+              <Button onClick={handleClick}>Home</Button>
+            </Link>
             <Button variant="link" to="/">
               Our Team
             </Button>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </PageLayout>
   );
 }
