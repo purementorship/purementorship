@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import homepage from "@/assets/homepage.jpg";
 import Lockhead from "@/assets/lockhead";
 import Aws from "@/assets/aws";
 import Paloalto from "@/assets/paloalto";
@@ -49,10 +50,7 @@ export default function HomePage() {
           <CarouselContent>
             <CarouselItem>
               <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0">
-                <img
-                  className="h-full w-full object-cover"
-                  src="./src/assets/homepage.jpg"
-                />
+                <img className="h-full w-full object-cover" src={homepage} />
                 <div className="flex flex-col absolute lg:w-2/5 gap-3">
                   <div className="w-full h-0.5">
                     <div className="w-full h-1.5 bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>

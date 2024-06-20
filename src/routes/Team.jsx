@@ -8,73 +8,83 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import aadityPicture from "@/assets/mentors/aadity.png";
+import anishaPicture from "@/assets/mentors/anisha.png";
+import estherPicture from "@/assets/mentors/esther.png";
+import harunaPicture from "@/assets/mentors/haruna.png";
+import josephPicture from "@/assets/mentors/joseph.png";
+import leoPicture from "@/assets/mentors/leo.png";
+import marcosPicture from "@/assets/mentors/marcos.png";
+import michaelPicture from "@/assets/mentors/michael.png";
+import riddhiPicture from "@/assets/mentors/riddhi.png";
+import rominaPicture from "@/assets/mentors/romina.png";
+import thenuPicture from "@/assets/mentors/thenu.png";
 
 const Team = () => {
   const mentors = [
     {
       name: "Aadity J.",
-      picture: "./src/assets/mentors/aadity.png",
+      picture: aadityPicture,
       school: "University of Maryland",
       domain: "Data Analytics, Information Systems, Aerospace",
     },
     {
       name: "Anisha K.",
-      picture: "./src/assets/mentors/anisha.png",
+      picture: anishaPicture,
       school: "Duke University",
       domain: "Engineering Management, Marketing",
     },
     {
       name: "Esther C.",
-      picture: "./src/assets/mentors/esther.png",
+      picture: estherPicture,
       school: "Calflin University",
       domain: "Software Engineering, AI/Machine Learning",
     },
     {
       name: "Haruna O.",
-      picture: "./src/assets/mentors/haruna.png",
+      picture: harunaPicture,
       school: "Software Engineer",
       domain: "Software Engineering, AI/Machine Learning",
     },
     {
       name: "Joseph B.",
-      picture: "./src/assets/mentors/joseph.png",
+      picture: josephPicture,
       school: "San Jose State University",
       domain: "Data Analytics, Information Systems, Aerospace",
     },
     {
       name: "Leo S.",
-      picture: "./src/assets/mentors/leo.png",
+      picture: leoPicture,
       school: "Virginia Tech",
       domain: "Data Analytics, Information Systems, Aerospace",
     },
-
     {
       name: "Marcos V.",
-      picture: "./src/assets/mentors/marcos.png",
+      picture: marcosPicture,
       school: "San Jose State University",
       domain: "Data Analytics, Information Systems, Aerospace",
     },
     {
       name: "Michael S.",
-      picture: "./src/assets/mentors/michael.png",
+      picture: michaelPicture,
       school: "San Jose State University",
       domain: "Software Engineering, AI/Machine Learning",
     },
     {
       name: "Riddhi K.",
-      picture: "./src/assets/mentors/riddhi.png",
+      picture: riddhiPicture,
       school: "University of Nevada",
       domain: "Engineering Management, Marketing",
     },
     {
       name: "Romina T.",
-      picture: "./src/assets/mentors/romina.png",
+      picture: rominaPicture,
       school: "Carnegie Mellon University",
       domain: "Data Analytics, Information Systems, Aerospace",
     },
     {
       name: "Thenu S.",
-      picture: "./src/assets/mentors/thenu.png",
+      picture: thenuPicture,
       school: "San Jose State University",
       domain: "Engineering Management, Marketing",
     },
