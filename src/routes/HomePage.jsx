@@ -28,6 +28,10 @@ import {
 import PageLayout from "@/components/PageLayout";
 
 export default function HomePage() {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -74,16 +78,24 @@ export default function HomePage() {
                   </div>
 
                   <div className="flex flex-col items-center lg:items-start">
-                    <Button className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400">
-                      Join Today
-                    </Button>
-                    <div className="flex pt-1 items-center">
+                    <Link to="/JoinUs">
                       <Button
-                        variant="link"
-                        className="text-pmpurplelight font-bold mr-0 lg:mx-14 lg:mr-1 px-1"
+                        onClick={handleClick}
+                        className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400"
                       >
-                        LEARN MORE
+                        Join Today
                       </Button>
+                    </Link>
+                    <div className="flex pt-1 items-center">
+                      <Link to="/AboutUs">
+                        <Button
+                          onClick={handleClick}
+                          variant="link"
+                          className="text-pmpurplelight font-bold mr-0 lg:mx-14 lg:mr-1 px-1"
+                        >
+                          LEARN MORE
+                        </Button>
+                      </Link>
                       <ArrowRight className="text-pmpurplelight" />
                     </div>
                   </div>

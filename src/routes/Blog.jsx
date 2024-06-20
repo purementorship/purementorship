@@ -6,6 +6,7 @@ import BlogAllExpand from "@/routes/BlogAllExpand";
 import { motion } from "framer-motion";
 import blogStudents from "@/assets/BlogStudents.webp";
 import founderHeadshotCrop from "@/assets/FounderHeadshotCrop.png";
+import logo from "@/assets/logo.svg";
 
 export default function Blog() {
   const fadeInAnimationVariants = {
@@ -109,7 +110,7 @@ export default function Blog() {
                   A Reflection of the New Changes with Thenu
                 </h2>
                 <div className="flex absolute bottom-2 left-2 md:bottom-6 md:left-4">
-                  <img src="./src/assets/logo.svg" className="w-5 mr-2 " />
+                  <img src={logo} className="w-5 mr-2 " />
                   <div className="text-white text-sm md:text-lg">
                     Pure Mentorship
                   </div>
