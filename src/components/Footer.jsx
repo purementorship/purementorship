@@ -26,18 +26,21 @@ const Footer = () => {
           <Link
             className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
             to="/"
+            onClick={() => window.scrollTo(0, 0)}
           >
             Home
           </Link>
           <Link
             className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
             to="/AboutUs"
+            onClick={() => window.scrollTo(0, 0)}
           >
             About
           </Link>
           <Link
             className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
             to="/Program"
+            onClick={() => window.scrollTo(0, 0)}
           >
             Program
           </Link>
