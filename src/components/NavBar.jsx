@@ -56,7 +56,10 @@ const NavBar = () => {
               <Link className="flex items-center gap-2 font-medium" to="/Blog">
                 Blog
               </Link>
-              <Link className="flex items-center gap-2 font-medium" to="/Join">
+              <Link
+                className="flex items-center gap-2 font-medium"
+                to="/JoinUs"
+              >
                 Join Us
               </Link>
             </div>
@@ -79,7 +82,12 @@ const NavBar = () => {
         <Link className="hover:underline" to="/Blog">
           Blog
         </Link>
-        <Button className="bg-pmpurple text-white hover:bg-gray-400 hover:text-black">
+        <Button
+          className="bg-pmpurple text-white hover:bg-gray-400 hover:text-black"
+          onClick={() => {
+            window.location = "/JoinUs";
+          }}
+        >
           Join Today
         </Button>
       </div>

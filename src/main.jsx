@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutUs from "@/routes/AboutUs";
 import Team from "@/routes/Team";
 import Program from "@/routes/Program";
+import JoinUs from "@/routes/JoinUs";
 import Blog from "@/routes/Blog";
 import BlogAll from "@/routes/BlogAll";
 import BlogAllExpand from "./routes/BlogAllExpand.jsx";
@@ -36,12 +37,12 @@ const router = createBrowserRouter([
     element: <BlogAllExpand />,
   },
   {
-    path: "/Join",
-    element: <AboutUs />,
-  },
-  {
     path: "/Program",
     element: <Program />,
+  },
+  {
+    path: "/JoinUs",
+    element: <JoinUs />,
   },
 ]);
 
