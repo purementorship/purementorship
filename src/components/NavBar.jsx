@@ -9,7 +9,9 @@ const NavBar = () => {
     <header className="flex h-24 w-full shrink-0 items-center px-4 md:px-6 gap-2 shadow-2xl relative">
       {/*Desktop Navbar*/}
       <div className="items-center flex gap-5 pl-10">
-        <img src={logo} />
+        <Link to="/">
+          <img src={logo} />
+        </Link>
         <div className="flex flex-col">
           <span className="text-pmpurple font-bold text-lg -mb-1.5">
             PURE MENTORSHIP
