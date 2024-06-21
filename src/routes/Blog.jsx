@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import blogStudents from "@/assets/BlogStudents.webp";
 import founderHeadshotCrop from "@/assets/FounderHeadshotCrop.png";
 import logo from "@/assets/logo.svg";
+import internLetters from "@/assets/internLetters.webp";
 
 export default function Blog() {
   const fadeInAnimationVariants = {
@@ -37,53 +38,14 @@ export default function Blog() {
       },
       {
         id: 2,
-        title: "Mastering React Hooks",
-        category: "New",
-        date: "June 1, 2024",
-        description:
-          "Dive deep into the power of React Hooks and how to use them effectively.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
-      },
-      {
-        id: 3,
-        title: "Optimizing Website Performance",
+        title:
+          "Introducing Intern Letters from Pure Mentorship's Current Interns!",
         category: "Popular",
-        date: "May 28, 2024",
+        date: "June 4, 2023",
         description:
-          "Learn techniques to improve your website's speed and user experience.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
-      },
-      {
-        id: 4,
-        title: "The Rise of Serverless Computing",
-        category: "Featured",
-        date: "May 15, 2024",
-        description:
-          "Explore the benefits and challenges of serverless architecture.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
-      },
-      {
-        id: 5,
-        title: "Accessibility in Web Design",
-        category: "New",
-        date: "April 30, 2024",
-        description:
-          "Ensuring your website is inclusive and accessible to all users.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
-      },
-      {
-        id: 6,
-        title: "Scaling Your React Application",
-        category: "Popular",
-        date: "April 20, 2024",
-        description:
-          "Strategies and best practices for building scalable React apps.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
+          "At Pure Mentorship, we believe in the power of sharing experiences and inspiring one another.",
+        image: internLetters,
+        link: "/BlogAllExpand#post-2",
       },
     ].filter((post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase())

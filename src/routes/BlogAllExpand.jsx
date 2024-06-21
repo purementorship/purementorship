@@ -115,67 +115,68 @@ export default function BlogAllExpand() {
               </p>
             </article>
             <div className="h-px bg-gray-200 dark:bg-gray-700" />
-            <article className="grid gap-4">
+            <article id="post-2" className="grid gap-4">
               <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
-                <div>Jane Smith</div>
+                <div>Pure Mentorship</div>
                 <div className="h-4 w-px bg-gray-300 dark:bg-gray-700" />
                 <div>April 15, 2023</div>
               </div>
               <h2 className="text-2xl font-bold tracking-tight">
-                The Future of Remote Work
+                Introducing "Intern Letters" from Pure Mentorship's Current
+                Interns!
               </h2>
               <p className="text-gray-500 dark:text-gray-400">
-                The COVID-19 pandemic has accelerated the shift towards remote
-                work, and many experts believe this trend is here to stay. This
-                blog post explores the benefits and challenges of remote work,
-                and how companies can adapt to this new way of working.
+                At Pure Mentorship, we believe in the power of sharing
+                experiences and inspiring one another. That's why we're thrilled
+                to present "Intern Letters" – a collection of short messages
+                written by our current interns, sharing their enthusiasm and
+                detailing their incredible projects here at Pure Mentorship.
+              </p>
+              <h1 className="text-gray-500 dark:text-gray-400">
+                These letters offer an inside look into the meaningful work our
+                interns are engaged in, showcasing their dedication, growth, and
+                impact.
+              </h1>
+              <p className="text-gray-500 dark:text-gray-400">
+                As we eagerly anticipate the arrival of our new cohort of
+                interns this summer, these letters provide invaluable insights
+                and inspiration for incoming and future interns. They capture
+                the essence of our supportive community, collaborative projects,
+                and the transformative journey that awaits each and every one of
+                you.
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                So, get ready to embark on an unforgettable experience! Our
+                current interns are eagerly waiting to share their stories and
+                guide you on this incredible adventure.
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                Stay tuned for the upcoming release of "Intern Letters"! We
+                can't wait to witness the torch of passion being passed from one
+                intern to another, igniting the sparks of ambition and growth
+                within our Pure Mentorship team.
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                Join us this summer and be a part of something extraordinary.
+                The Pure Mentorship internship awaits, ready to shape futures
+                and empower young minds.
               </p>
             </article>
             <div className="h-px bg-gray-200 dark:bg-gray-700" />
-            <article className="grid gap-4">
+            <article id="post-3" className="grid gap-4">
               <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
-                <div>Michael Johnson</div>
+                <div>Pure Mentorship</div>
                 <div className="h-4 w-px bg-gray-300 dark:bg-gray-700" />
-                <div>March 28, 2023</div>
+                <div>Dec 23, 2022</div>
               </div>
               <h2 className="text-2xl font-bold tracking-tight">
-                The Importance of Sustainability
+                Creative Booms Ongoing
               </h2>
               <p className="text-gray-500 dark:text-gray-400">
-                As the world faces the challenges of climate change and
-                environmental degradation, the importance of sustainability has
-                never been more pressing. This blog post explores the steps
-                individuals and businesses can take to reduce their carbon
-                footprint and contribute to a more sustainable future.
-              </p>
-            </article>
-            <div className="h-px bg-gray-200 dark:bg-gray-700" />
-            <article className="grid gap-4">
-              <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
-                <div>Jane Smith</div>
-                <div className="h-4 w-px bg-gray-300 dark:bg-gray-700" />
-                <div>April 15, 2023</div>
-              </div>
-              <h2 className="text-2xl font-bold tracking-tight">
-                The Future of Remote Work
-              </h2>
-              <p className="text-gray-500 dark:text-gray-400">
-                The COVID-19 pandemic has accelerated the shift towards remote
-                work, and many experts believe this trend is here to stay. This
-                blog post explores the benefits and challenges of remote work,
-                and how companies can adapt to this new way of working. Lorem,
-                ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-                harum ea! Iusto porro rem sunt corrupti repellendus amet earum
-                error fugit, quo dignissimos minima. Doloremque, explicabo et
-                facilis accusamus iusto dolorem obcaecati illum voluptas quasi
-                dolores in? Illo expedita corrupti harum fugiat rerum temporibus
-                quasi hic ad provident nihil ipsum magni magnam eligendi
-                pariatur recusandae consequatur tempore, ipsam laudantium,
-                labore ipsa facilis alias ut sit! Debitis aspernatur deleniti
-                nemo iste at earum ullam odio eius dolorum qui impedit minima
-                facilis aut, odit, pariatur hic quod error quidem. Tempora modi
-                numquam minus adipisci repudiandae, ad dignissimos maxime,
-                veniam, nostrum voluptate consectetur.kj
+                One of our first goals is to decide on our brand, logo, and
+                website design. Here is a sneak peek of Vienna using Adobe
+                InDesign and other graphic design tools to establish Pure
+                Mentorship with engaging colors and a dynamic design.
               </p>
             </article>
             <div className="h-px bg-gray-200 dark:bg-gray-700" />

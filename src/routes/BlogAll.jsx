@@ -5,6 +5,8 @@ import PageLayout from "@/components/PageLayout";
 import BlogAllExpand from "@/routes/BlogAllExpand";
 import { motion } from "framer-motion";
 import blogStudents from "@/assets/BlogStudents.webp";
+import internLetters from "@/assets/internLetters.webp";
+import creativeBooms from "@/assets/creativeBooms.webp";
 
 export default function BlogAll() {
   const fadeInAnimationVariants = {
@@ -35,48 +37,24 @@ export default function BlogAll() {
       },
       {
         id: 2,
-        title: "Mastering React Hooks",
-        date: "June 1, 2024",
+        title:
+          "Introducing Intern Letters from Pure Mentorship's Current Interns!",
+        category: "Popular",
+        date: "June 4, 2023",
         description:
-          "Dive deep into the power of React Hooks and how to use them effectively.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
+          "At Pure Mentorship, we believe in the power of sharing experiences and inspiring one another.",
+        image: internLetters,
+        link: "/BlogAllExpand#post-2",
       },
       {
         id: 3,
-        title: "Optimizing Website Performance",
-        date: "May 28, 2024",
+        title: "Creative Booms Ongoing",
+        category: "Popular",
+        date: "Dec 23, 2022",
         description:
-          "Learn techniques to improve your website's speed and user experience.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
-      },
-      {
-        id: 4,
-        title: "The Rise of Serverless Computing",
-        date: "May 15, 2024",
-        description:
-          "Explore the benefits and challenges of serverless architecture.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
-      },
-      {
-        id: 5,
-        title: "Accessibility in Web Design",
-        date: "April 30, 2024",
-        description:
-          "Ensuring your website is inclusive and accessible to all users.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
-      },
-      {
-        id: 6,
-        title: "Scaling Your React Application",
-        date: "April 20, 2024",
-        description:
-          "Strategies and best practices for building scalable React apps.",
-        image: "/placeholder.svg",
-        link: "/BlogAllExpand",
+          "At Pure Mentorship, we believe in the power of sharing experiences and inspiring one another.",
+        image: creativeBooms,
+        link: "/BlogAllExpand#post-3",
       },
     ].filter((post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase())
