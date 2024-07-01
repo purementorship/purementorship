@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <header className="flex h-24 w-full shrink-0 items-center px-4 md:px-6 gap-2 shadow-2xl relative">
       {/*Desktop Navbar*/}
-      <div className="items-center flex gap-5 pl-10">
+      <div className="items-center flex shrink-0 gap-5 pl-10">
         <Link to="/">
           <img src={logo} />
         </Link>
@@ -24,7 +24,7 @@ const NavBar = () => {
       <div className="ml-auto">
         <Sheet>
           <SheetTrigger asChild>
-            <Button className="lg:hidden" size="icon" variant="outline">
+            <Button className="xl:hidden" size="icon" variant="outline">
               <MenuIcon className="h-6 w-6" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
@@ -68,7 +68,7 @@ const NavBar = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <div className="ml-auto hidden space-x-6 lg:flex items-center font-normal gap-7 pr-10">
+      <div className="shrink-0 ml-auto hidden space-x-6 xl:flex items-center font-normal gap-7 pr-10">
         <Link className="hover:underline" to="/">
           Home
         </Link>
