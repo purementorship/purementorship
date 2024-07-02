@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import homepage from "@/assets/homepage.jpg";
+import aboutUsHome from "@/assets/AboutUsHome.png";
 import Lockhead from "@/assets/lockhead";
 import Aws from "@/assets/aws";
 import Paloalto from "@/assets/paloalto";
@@ -54,7 +54,7 @@ export default function HomePage() {
           <CarouselContent>
             <CarouselItem>
               <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0">
-                <img className="h-full w-full object-cover" src={homepage} />
+                <img className="h-full w-full object-cover" src={aboutUsHome} />
                 <div className="flex flex-col absolute lg:w-2/5 gap-3">
                   <div className="w-full h-0.5">
                     <div className="w-full h-1.5 bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
@@ -137,7 +137,7 @@ export default function HomePage() {
       </section>
 
       {/* PAGE 2: LOGO GARDEN */}
-      <section className="flex items-center justify-center bg-gray-100 snap-start">
+      <section className="flex items-center justify-center bg-gray-100 snap-start h-2/3">
         <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 m-10 lg:m-96">
           <h2 className="text-center text-3xl pb-10 lg:pb-24">
             Our mentors have worked with:

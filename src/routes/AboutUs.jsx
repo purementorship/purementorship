@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
 import PageLayout from "@/components/PageLayout";
-import {
-  CarouselItem,
-  CarouselContent,
-  CarouselPrevious,
-  CarouselNext,
-  Carousel,
-} from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import aboutUsHome from "@/assets/AboutUsHome.png";
+import homepage from "@/assets/homepage.jpg";
 import happyStudent from "@/assets/happy-student.jpg";
 import founderHeadshot from "@/assets/FounderHeadshot.png";
 import { Link } from "react-router-dom";
@@ -51,7 +44,7 @@ export default function AboutUs() {
       {/* PAGE 1: WELCOME */}
       <section className="flex items-center justify-center h-screen snap-start">
         <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0 w-full">
-          <img className="h-full w-full object-cover" src={aboutUsHome} />
+          <img className="h-full w-full object-cover" src={homepage} />
           <div className="flex flex-col absolute lg:w-2/5 gap-3">
             <div className="w-full h-0.5">
               <div className="w-full h-1.5 hidden md:block bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
@@ -155,15 +148,15 @@ export default function AboutUs() {
             <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-5xl lg:text-6xl">
               Meet the founder
             </h1>
-            <h3>Thenu Senthil</h3>
+            <h3>Diane Senthil</h3>
             <p className="max-w-md text-gray-500 dark:text-gray-400">
-              "Hello! My name is Thenu and I am a nationally-recognized leader
+              "Hello! My name is Diane and I am a nationally-recognized leader
               and the founder of Pure Mentorship! I strongly believe in the
               potential of each individual and know that support from a mentor
               at a young age can propel them toward a lifetime of success.”
             </p>
             <div className="flex gap-2">
-              <Button variant="outline">READ A LETTER FROM THENU ➡</Button>
+              <Button variant="outline">READ A LETTER FROM DIANE➡</Button>
             </div>
           </motion.div>
           <motion.img
