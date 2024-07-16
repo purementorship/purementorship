@@ -180,6 +180,55 @@ export default function BlogAllExpand() {
               </p>
             </article>
             <div className="h-px bg-gray-200 dark:bg-gray-700" />
+            <article id="post-4" className="grid gap-4">
+              <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
+                <div>Pure Mentorship</div>
+                <div className="h-4 w-px bg-gray-300 dark:bg-gray-700" />
+                <div>Jul 17, 2023</div>
+              </div>
+              <h2 className="text-2xl font-bold tracking-tight">
+                Our New Framework
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400">
+                Pure Mentorship focuses on making sure that we improve and help
+                students find the mentor that they need.
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                Mentorship can look different for everyone–in many cases, it can
+                be extremely beneficial for many people. Yet, finding the
+                correct mentor can be extremely difficult for students. Pure
+                Mentorship wants to ease the gap and connect students to a
+                mentor that fits their needs.
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                One major change that Pure Mentorship is making in order to make
+                mentorship more accessible is their choice in framework or not.{" "}
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                Instead of having one way to have meetings and goal setting, we
+                are leaving it up to the mentee to choose whether or not they
+                want to use the current framework.
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                The current framework, commonly known as the IGP (Individual
+                Growth Plan), is a great way for mentees who want more
+                structure. The IGP focuses on creating SMART goals in order to
+                encourage growth in the following areas: academic, personal, and
+                professional. Both mentors and mentees can use the IGP framework
+                and set these SMART goals as a way to structure growth.{" "}
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                SMART goals focus on creating attainable goals in a timely
+                manner. The different aspects of SMART stand for: Specific,
+                Meansurable, Achievable, Relevant, and Time Bound. For mentees
+                who don’t want to use the IGP, they are welcome to talk to
+                Thenu, our founder, about what they want from their mentors.{" "}
+              </p>
+              <p className="text-gray-500 dark:text-gray-400">
+                What type of framework are you interested in? Let us know
+                @PureMentorship on Instagram and LinkedIn!
+              </p>
+            </article>
           </div>
         </div>
       </div>

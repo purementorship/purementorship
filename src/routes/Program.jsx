@@ -12,30 +12,37 @@ const Program = () => {
   return (
     <PageLayout className="bg-gray-100">
       <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          icon={<Search />}
-          iconStyle={{
-            background: "#C197B0",
-            color: "#fff",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title text-3xl font-bold text-pmpurple">
-            The Journey Begins: The Discovery Meeting
-          </h3>
-          <p>
-            Welcome to the mentorship program! We are excited to embark on this
-            growth journey with you. To get started, simply fill out the
-            onboarding form, and we'll invite you to a special "Discovery
-            Meeting." During this meeting, we'll introduce you to the program
-            and work together to develop your Individual Growth Plan (IGP). Your
-            IGP is an essential tool that helps us understand your aspirations
-            and "SMART" goals. It's a collaborative process, allowing us to
-            tailor the mentorship experience to your unique needs. By sharing
-            your dreams and passions, we can make sure you get the most out of
-            this mentoring adventure.
-          </p>
-        </VerticalTimelineElement>
+        <div id="timeline-element-and-icon" className="flex items-end">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            icon={<Search />}
+            iconStyle={{
+              background: "#C197B0",
+              color: "#fff",
+            }}
+          >
+            <h3 className="vertical-timeline-element-title text-3xl font-bold text-pmpurple">
+              The Journey Begins: The Discovery Meeting
+            </h3>
+            <p>
+              Welcome to the mentorship program! We are excited to embark on
+              this growth journey with you. To get started, simply fill out the
+              onboarding form, and we'll invite you to a special "Discovery
+              Meeting." During this meeting, we'll introduce you to the program
+              and work together to develop your Individual Growth Plan (IGP).
+              Your IGP is an essential tool that helps us understand your
+              aspirations and "SMART" goals. It's a collaborative process,
+              allowing us to tailor the mentorship experience to your unique
+              needs. By sharing your dreams and passions, we can make sure you
+              get the most out of this mentoring adventure.
+            </p>
+          </VerticalTimelineElement>
+          <img
+            id="animated-icon"
+            src="./src/assets/downArrow.png"
+            className="mx-10 mb-32 hidden md:block"
+          />
+        </div>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           icon={<UserCheck />}

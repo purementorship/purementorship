@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import blogStudents from "@/assets/BlogStudents.webp";
 import internLetters from "@/assets/internLetters.webp";
 import creativeBooms from "@/assets/creativeBooms.webp";
+import newFramework from "@/assets/lady-at-desk.webp";
 
 export default function BlogAll() {
   const fadeInAnimationVariants = {
@@ -55,6 +56,16 @@ export default function BlogAll() {
           "At Pure Mentorship, we believe in the power of sharing experiences and inspiring one another.",
         image: creativeBooms,
         link: "/BlogAllExpand#post-3",
+      },
+      {
+        id: 4,
+        title: "Our New Framework",
+        category: "Popular",
+        date: "July 17, 2023",
+        description:
+          "Pure Mentorship focuses on making sure that we improve and help students find the mentor that they need.",
+        image: newFramework,
+        link: "/BlogAllExpand#post-4",
       },
     ].filter((post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase())

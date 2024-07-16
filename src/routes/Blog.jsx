@@ -8,6 +8,7 @@ import blogStudents from "@/assets/BlogStudents.webp";
 import founderHeadshotCrop from "@/assets/FounderHeadshotCrop.png";
 import logo from "@/assets/logo.svg";
 import internLetters from "@/assets/internLetters.webp";
+import newFramework from "@/assets/lady-at-desk.webp"
 
 export default function Blog() {
   const fadeInAnimationVariants = {
@@ -39,13 +40,23 @@ export default function Blog() {
       {
         id: 2,
         title:
-          "Introducing Intern Letters from Pure Mentorship's Current Interns!",
-        category: "Popular",
-        date: "June 4, 2023",
+          "introducing intern letters from pure mentorship's current interns!",
+        category: "popular",
+        date: "june 4, 2023",
         description:
-          "At Pure Mentorship, we believe in the power of sharing experiences and inspiring one another.",
+          "at pure mentorship, we believe in the power of sharing experiences and inspiring one another.",
         image: internLetters,
-        link: "/BlogAllExpand#post-2",
+        link: "/blogallexpand#post-2",
+      },
+      {
+        id: 3,
+        title: "Our New Framework",
+        category: "popular",
+        date: "July 17, 2023",
+        description:
+          "Pure Mentorship focuses on making sure that we improve and help students find the mentor that they need.",
+        image: newFramework,
+        link: "/blogallexpand#post-3",
       },
     ].filter((post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -54,7 +65,7 @@ export default function Blog() {
   return (
     <>
       <PageLayout>
-        {/* Thenu Header */}
+        {/* Diane Header */}
         <section className="w-full h-full">
           <div className="relative">
             <img
@@ -69,7 +80,7 @@ export default function Blog() {
             >
               <div id="text-box">
                 <h2 className="text-sm md:text-3xl text-white font-bold absolute bottom-7 left-2 md:bottom-12 md:left-4">
-                  A Reflection of the New Changes with Thenu
+                  A Reflection of the New Changes with Diane
                 </h2>
                 <div className="flex absolute bottom-2 left-2 md:bottom-6 md:left-4">
                   <img src={logo} className="w-5 mr-2 " />

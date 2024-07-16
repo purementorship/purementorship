@@ -47,21 +47,9 @@ const Team = () => {
       domain: "Software Engineering, AI/Machine Learning",
     },
     {
-      name: "Joseph B.",
-      picture: josephPicture,
-      school: "San Jose State University",
-      domain: "Data Analytics, Information Systems, Aerospace",
-    },
-    {
       name: "Leo S.",
       picture: leoPicture,
       school: "Virginia Tech",
-      domain: "Data Analytics, Information Systems, Aerospace",
-    },
-    {
-      name: "Marcos V.",
-      picture: marcosPicture,
-      school: "San Jose State University",
       domain: "Data Analytics, Information Systems, Aerospace",
     },
     {

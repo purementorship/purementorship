@@ -156,7 +156,13 @@ export default function AboutUs() {
               at a young age can propel them toward a lifetime of success.”
             </p>
             <div className="flex gap-2">
-              <Button variant="outline">READ A LETTER FROM DIANE➡</Button>
+              <a
+                target="_blank"
+                href="https://dianeportfolio01.wixsite.com/portfolio"
+                className="border border-zinc-300 px-3 py-2 rounded-xl bg-zinc-300"
+              >
+                ABOUT DIANE➡
+              </a>
             </div>
           </motion.div>
           <motion.img
