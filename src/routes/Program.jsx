@@ -7,6 +7,7 @@ import PageLayout from "@/components/PageLayout";
 import { Search } from "lucide-react";
 import { UserCheck } from "lucide-react";
 import { Handshake } from "lucide-react";
+import downArrow from "@/assets/downArrow.png";
 
 const Program = () => {
   return (
@@ -39,7 +40,7 @@ const Program = () => {
           </VerticalTimelineElement>
           <img
             id="animated-icon"
-            src="./src/assets/downArrow.png"
+            src={downArrow}
             className="mx-10 mb-32 hidden md:block"
           />
         </div>
