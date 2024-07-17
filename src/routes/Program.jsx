@@ -12,6 +12,11 @@ import downArrow from "@/assets/downArrow.png";
 const Program = () => {
   return (
     <PageLayout className="bg-gray-100">
+      <img
+        id="animated-icon"
+        src={downArrow}
+        className="mx-10 mb-32 hidden md:block absolute right-16 top-96"
+      />
       <VerticalTimeline>
         <div id="timeline-element-and-icon" className="flex items-end">
           <VerticalTimelineElement
@@ -38,11 +43,6 @@ const Program = () => {
               get the most out of this mentoring adventure.
             </p>
           </VerticalTimelineElement>
-          <img
-            id="animated-icon"
-            src={downArrow}
-            className="mx-10 mb-32 hidden md:block"
-          />
         </div>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
