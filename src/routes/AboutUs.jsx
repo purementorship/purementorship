@@ -16,7 +16,7 @@ export default function AboutUs() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.5,
+        delay: 0.1,
       },
     },
   };
@@ -30,7 +30,7 @@ export default function AboutUs() {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 1,
+        delay: 0.5,
       },
     },
   };
@@ -160,7 +160,7 @@ export default function AboutUs() {
                 href="https://dianeportfolio01.wixsite.com/portfolio"
                 className="border border-zinc-300 px-3 py-2 rounded-xl bg-zinc-300"
               >
-                ABOUT DIANE➡
+                ABOUT DIANE ➡
               </a>
             </div>
           </motion.div>
@@ -176,18 +176,6 @@ export default function AboutUs() {
           />
         </div>
       </div>
-      {/* <footer className="bg-gray-100 py-2 px-4 dark:bg-gray-800">
-        <div className="container mx-auto flex justify-end">
-          <div className="flex gap-2">
-            <Link to="/">
-              <Button onClick={handleClick}>Home</Button>
-            </Link>
-            <Button variant="link" to="/">
-              Our Team
-            </Button>
-          </div>
-        </div>
-      </footer> */}
     </PageLayout>
   );
 }
