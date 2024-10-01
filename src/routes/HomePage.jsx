@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import aboutUsHome from "@/assets/AboutUsHome.png";
+import homepageTest from "@/assets/homepage-test.png"
 import Lockhead from "@/assets/lockhead";
 import Aws from "@/assets/aws";
 import Paloalto from "@/assets/paloalto";
@@ -40,7 +41,7 @@ export default function HomePage() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.2,
+        delay: 0.1,
       },
     },
   };
@@ -49,36 +50,38 @@ export default function HomePage() {
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
       {/* PAGE 1: WELCOME */}
       <section className="flex items-center justify-center h-screen snap-start">
-        <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0 w-full">
-          <img className="h-full w-full object-cover" src={aboutUsHome} />
-          <div className="flex flex-col absolute lg:w-2/5 gap-3">
-            <div className="w-full h-0.5">
-              <div className="w-full h-1.5 hidden md:block bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
-            </div>
-            <h1 className="text-5xl text-center lg:text-left mx-14">
-              Reach the highest
-            </h1>
-            <h1 className="text-5xl text-center lg:text-left mx-14">
-              version of yourself
-            </h1>
-            <h1 className="text-5xl text-center lg:text-left mx-14">
-              with the right support.
-            </h1>
-
-            <div className="p-5 w-full bg-gradient-to-r from-pmpurple from-60% to-transparent">
-              <p className="font-light mx-10 text-center lg:text-left">
+        <div className="flex flex-col items-center justify-center xl:items-start h-screen text-white md:shrink-0 w-full">
+          <img
+            className="h-full w-full object-cover xl:hidden"
+            src={aboutUsHome}
+            alt="About Us"
+          />
+          <img
+            className="hidden xl:block xl:h-full xl:w-full xl:object-cover"
+            src={homepageTest}
+            alt="Homepage Test"
+          />
+          <div className="flex flex-col absolute xl:w-[45%]">
+            <div className="px-8 py-4 w-full bg-pmpurple bg-opacity-50 xl:bg-gradient-to-r xl:from-pmpurple xl:from-60% lg:to-transparent">
+              <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
+                Reach the highest
+              </h1>
+              <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
+                version of yourself
+              </h1>
+              <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
+                with the right support.
+              </h1>
+              <p className="font-light pt-6 text-center xl:text-left">
                 At Pure Mentorship, we connect you with experienced mentors for
                 personalized support - free of charge!
               </p>
-            </div>
-
-            <div className="flex flex-col items-center lg:items-start">
-              <div className="flex pt-1 items-center">
+              <div className="flex pt-4 justify-center xl:justify-start">
                 <Link to="/AboutUs">
                   <Button
                     onClick={handleClick}
                     variant="link"
-                    className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400"
+                    className="text-lg bg-white text-pmpurple hover:bg-gray-400"
                   >
                     LEARN MORE
                   </Button>
@@ -90,128 +93,6 @@ export default function HomePage() {
       </section>
 
       {/* PAGE 2: LOGO GARDEN */}
-      {/* <section className="flex items-center justify-center bg-gray-100 snap-start h-2/3">
-        <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 m-10 lg:m-96">
-          <h2 className="text-center text-3xl pb-10 lg:pb-24">
-            Our mentors have worked with:
-          </h2>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={fadeInAnimationVariants}
-            className="grid lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20"
-          >
-            <Aws />
-            <Lockhead />
-            <Paloalto />
-            <Nasa />
-            <Nvidia />
-          </motion.div>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={fadeInAnimationVariants}
-            className="grid justify-items-center lg:flex lg:flex-row justify-center w-full items-center gap-20"
-          >
-            <Microsoft />
-            <Exonmobil />
-            <Amazon />
-            <Rmi />
-          </motion.div>
-        </div>
-      </section> */}
-
-      {/* <section className="flex items-center justify-center bg-gray-100 snap-start h-auto md:h-2/3">
-        <div className="container w-full px-4 flex flex-col items-center gap-5 m-4 lg:m-16">
-          <h2 className="text-center text-2xl md:text-3xl pb-5">
-            Our mentors have worked with:
-          </h2>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={fadeInAnimationVariants}
-            className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 lg:gap-10 w-full justify-items-center"
-          >
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Aws />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Lockhead />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Paloalto />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Nasa />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Nvidia />
-            </div>
-          </motion.div>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={fadeInAnimationVariants}
-            className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 w-full justify-items-center"
-          >
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Microsoft />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Exonmobil />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Amazon />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Rmi />
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
-
-      {/* <section className="flex items-center justify-center bg-gray-100 snap-start">
-        <div className="container w-full flex flex-col items-center gap-5 m-4 lg:m-16">
-          <h2 className="text-center text-2xl md:text-3xl pb-5">
-            Our mentors have worked with:
-          </h2>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={fadeInAnimationVariants}
-            className="flex flex-col flex-wrap md: flex-col justify-center items-center gap-4"
-          >
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Aws />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Lockhead />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Paloalto />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Nasa />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Nvidia />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Microsoft />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Exonmobil />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Amazon />
-            </div>
-            <div className="flex justify-center items-center mb-4 md:mb-0">
-              <Rmi />
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
-
       <section className="flex items-center justify-center bg-gray-100 snap-start">
         <div className="container w-full flex flex-col items-center gap-5 m-4 lg:m-16">
           <h2 className="text-center text-2xl md:text-3xl pb-5">
