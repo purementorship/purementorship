@@ -1,7 +1,7 @@
 const Rmi = () => {
   return (
     <svg
-      width="70"
+      width="150"
       height="73"
       viewBox="0 0 70 73"
       fill="none"

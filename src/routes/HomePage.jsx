@@ -7,7 +7,6 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import aboutUsHome from "@/assets/AboutUsHome.png";
 import Lockhead from "@/assets/lockhead";
 import Aws from "@/assets/aws";
@@ -41,7 +40,7 @@ export default function HomePage() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.5,
+        delay: 0.2,
       },
     },
   };
@@ -50,94 +49,48 @@ export default function HomePage() {
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
       {/* PAGE 1: WELCOME */}
       <section className="flex items-center justify-center h-screen snap-start">
-        <Carousel className="w-full">
-          <CarouselContent>
-            <CarouselItem>
-              <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0">
-                <img className="h-full w-full object-cover" src={aboutUsHome} />
-                <div className="flex flex-col absolute lg:w-2/5 gap-3">
-                  <div className="w-full h-0.5">
-                    <div className="w-full h-1.5 bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
-                  </div>
-                  <h1 className="text-5xl text-center lg:text-left mx-14">
-                    Reach the highest
-                  </h1>
-                  <h1 className="text-5xl text-center lg:text-left mx-14">
-                    version of yourself
-                  </h1>
-                  <h1 className="text-5xl text-center lg:text-left mx-14">
-                    with the right support.
-                  </h1>
+        <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0 w-full">
+          <img className="h-full w-full object-cover" src={aboutUsHome} />
+          <div className="flex flex-col absolute lg:w-2/5 gap-3">
+            <div className="w-full h-0.5">
+              <div className="w-full h-1.5 hidden md:block bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
+            </div>
+            <h1 className="text-5xl text-center lg:text-left mx-14">
+              Reach the highest
+            </h1>
+            <h1 className="text-5xl text-center lg:text-left mx-14">
+              version of yourself
+            </h1>
+            <h1 className="text-5xl text-center lg:text-left mx-14">
+              with the right support.
+            </h1>
 
-                  <div className="p-5 w-full bg-gradient-to-r from-pmpurple from-60% to-transparent">
-                    <p className="font-light mx-10 text-center lg:text-left">
-                      At Pure Mentorship, we connect you with experienced
-                      mentors in tech and entrepreneurship for personalized
-                      support - free of charge!
-                    </p>
-                  </div>
+            <div className="p-5 w-full bg-gradient-to-r from-pmpurple from-60% to-transparent">
+              <p className="font-light mx-10 text-center lg:text-left">
+                At Pure Mentorship, we connect you with experienced mentors for
+                personalized support - free of charge!
+              </p>
+            </div>
 
-                  <div className="flex flex-col items-center lg:items-start">
-                    <Link to="/JoinUs">
-                      <Button
-                        onClick={handleClick}
-                        className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400"
-                      >
-                        Join Today
-                      </Button>
-                    </Link>
-                    <div className="flex pt-1 items-center">
-                      <Link to="/AboutUs">
-                        <Button
-                          onClick={handleClick}
-                          variant="link"
-                          className="text-pmpurplelight font-bold mr-0 lg:mx-14 lg:mr-1 px-1"
-                        >
-                          LEARN MORE
-                        </Button>
-                      </Link>
-                      <ArrowRight className="text-pmpurplelight" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CarouselItem>
-            <CarouselItem>
-              <div className="flex flex-col items-center justify-center h-screen text-white">
-                <h1 className="text-5xl font-bold mb-4">
-                  Explore Our Features
-                </h1>
-                <p className="text-xl mb-8">Unlock the power of our app</p>
-                <div className="space-x-4">
-                  <Link
-                    className="inline-flex items-center justify-center h-10 px-6 rounded-md bg-white text-[#6366F1] font-medium transition-colors hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-                    href="#"
+            <div className="flex flex-col items-center lg:items-start">
+              <div className="flex pt-1 items-center">
+                <Link to="/AboutUs">
+                  <Button
+                    onClick={handleClick}
+                    variant="link"
+                    className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400"
                   >
-                    Get Started
-                  </Link>
-                  <Link
-                    className="inline-flex items-center justify-center h-10 px-6 rounded-md border border-white text-white font-medium transition-colors hover:bg-white hover:text-[#6366F1] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-                    href="#"
-                  >
-                    Learn More
-                  </Link>
-                </div>
+                    LEARN MORE
+                  </Button>
+                </Link>
               </div>
-            </CarouselItem>
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 rounded-full bg-gray-900/50 p-2">
-            <ChevronLeftIcon className="h-8 w-8" />
-            <span className="sr-only">Previous</span>
-          </CarouselPrevious>
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 rounded-full bg-gray-900/50 p-2">
-            <ChevronRightIcon className="h-8 w-8" />
-            <span className="sr-only">Next</span>
-          </CarouselNext>
-        </Carousel>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* PAGE 2: LOGO GARDEN */}
-      <section className="flex items-center justify-center bg-gray-100 snap-start h-2/3">
+      {/* <section className="flex items-center justify-center bg-gray-100 snap-start h-2/3">
         <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 m-10 lg:m-96">
           <h2 className="text-center text-3xl pb-10 lg:pb-24">
             Our mentors have worked with:
@@ -164,6 +117,139 @@ export default function HomePage() {
             <Exonmobil />
             <Amazon />
             <Rmi />
+          </motion.div>
+        </div>
+      </section> */}
+
+      {/* <section className="flex items-center justify-center bg-gray-100 snap-start h-auto md:h-2/3">
+        <div className="container w-full px-4 flex flex-col items-center gap-5 m-4 lg:m-16">
+          <h2 className="text-center text-2xl md:text-3xl pb-5">
+            Our mentors have worked with:
+          </h2>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={fadeInAnimationVariants}
+            className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 lg:gap-10 w-full justify-items-center"
+          >
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Aws />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Lockhead />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Paloalto />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Nasa />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Nvidia />
+            </div>
+          </motion.div>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={fadeInAnimationVariants}
+            className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 w-full justify-items-center"
+          >
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Microsoft />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Exonmobil />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Amazon />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Rmi />
+            </div>
+          </motion.div>
+        </div>
+      </section> */}
+
+      {/* <section className="flex items-center justify-center bg-gray-100 snap-start">
+        <div className="container w-full flex flex-col items-center gap-5 m-4 lg:m-16">
+          <h2 className="text-center text-2xl md:text-3xl pb-5">
+            Our mentors have worked with:
+          </h2>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={fadeInAnimationVariants}
+            className="flex flex-col flex-wrap md: flex-col justify-center items-center gap-4"
+          >
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Aws />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Lockhead />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Paloalto />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Nasa />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Nvidia />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Microsoft />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Exonmobil />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Amazon />
+            </div>
+            <div className="flex justify-center items-center mb-4 md:mb-0">
+              <Rmi />
+            </div>
+          </motion.div>
+        </div>
+      </section> */}
+
+      <section className="flex items-center justify-center bg-gray-100 snap-start">
+        <div className="container w-full flex flex-col items-center gap-5 m-4 lg:m-16">
+          <h2 className="text-center text-2xl md:text-3xl pb-5">
+            Our mentors have worked with:
+          </h2>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={fadeInAnimationVariants}
+            className="flex flex-wrap justify-center items-center gap-12 md:gap-12 lg:gap-20"
+          >
+            <div className="flex justify-center items-center">
+              <Aws />
+            </div>
+            <div className="flex justify-center items-center">
+              <Lockhead />
+            </div>
+            <div className="flex justify-center items-center">
+              <Paloalto />
+            </div>
+            <div className="flex justify-center items-center">
+              <Nasa />
+            </div>
+            <div className="flex justify-center items-center">
+              <Nvidia />
+            </div>
+            <div className="flex justify-center items-center">
+              <Microsoft />
+            </div>
+            <div className="flex justify-center items-center">
+              <Exonmobil />
+            </div>
+            <div className="flex justify-center items-center">
+              <Amazon />
+            </div>
+            <div className="flex justify-center items-center">
+              <Rmi />
+            </div>
           </motion.div>
         </div>
       </section>
@@ -225,7 +311,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 What is the time commitment needed to be a mentor?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Mentors are paired with a mentee based on their schedule and are
                 required to meet with their mentee at least biweekly for an hour
                 over the course of 1 year.
@@ -236,7 +322,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 How will a mentee get matched to the right mentor?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Each mentee and mentor meets with the founder in order to gain a
                 thorough understanding of their profiles and where help is
                 needed. Each pairing is made based off compatibility and
@@ -249,7 +335,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 What is the internship program like?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Each intern designs their own experience by deciding what
                 project they will work on and what skills they will employ.
                 Interns may choose to continue with the team after a successful
@@ -263,7 +349,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 How does mentorship benefit young students?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 We encourage students to succeed in school. “A vast majority of
                 educators — 95 % — say every student can benefit from having a
                 one-on-one mentor, according to a recent survey of 1,418 grade
@@ -277,7 +363,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 How does mentorship benefit young professionals?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 We give students the confidence to achieve in their careers.
                 “Cornell University’s School of Industrial and Labor Relations
                 found that mentoring programs boosted minority representation at
@@ -293,7 +379,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 Will there be in-person mentoring?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Currently we operate solely online.
               </AccordionContent>
             </AccordionItem>

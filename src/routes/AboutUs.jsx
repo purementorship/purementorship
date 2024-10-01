@@ -61,9 +61,8 @@ export default function AboutUs() {
 
             <div className="p-5 w-full bg-gradient-to-r from-pmpurple from-60% to-transparent">
               <p className="font-light mx-10 text-center lg:text-left">
-                At Pure Mentorship, we connect you with experienced mentors in
-                tech and entrepreneurship for personalized support - free of
-                charge!
+                At Pure Mentorship, we connect you with experienced mentors for
+                personalized support - free of charge!
               </p>
             </div>
             <div className="flex flex-col items-center lg:items-start">
