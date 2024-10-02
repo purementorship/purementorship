@@ -1,5 +1,5 @@
 const LeftBush = () => {
-        return (<svg width="819" height="297" viewBox="0 0 819 297" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        return (<svg width="819" height="297" viewBox="0 0 819 297" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <rect x="-374" width="1193" height="297" fill="url(#pattern0_265_3663)"/>
 <defs>
 <pattern id="pattern0_265_3663" patternContentUnits="objectBoundingBox" width="1" height="1">

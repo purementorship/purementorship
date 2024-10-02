@@ -6,7 +6,7 @@ const Lockhead = () => {
       viewBox="0 0 251 67"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <rect width="251" height="67" fill="url(#pattern0_265_3652)" />
       <defs>

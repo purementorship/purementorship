@@ -6,7 +6,7 @@ const Rmi = () => {
       viewBox="0 0 70 73"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <rect width="70" height="73" fill="url(#pattern0_265_3657)" />
       <defs>

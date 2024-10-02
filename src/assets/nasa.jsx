@@ -6,7 +6,7 @@ const Nasa = () => {
       viewBox="0 0 141 119"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <rect width="141" height="119" fill="url(#pattern0_265_3654)" />
       <defs>

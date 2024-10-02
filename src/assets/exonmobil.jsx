@@ -6,7 +6,7 @@ const Exonmobil = () => {
       viewBox="0 0 187 104"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <rect width="187" height="104" fill="url(#pattern0_265_3655)" />
       <defs>
