@@ -83,7 +83,7 @@ export default function HomePage() {
                     variant="link"
                     className="text-lg bg-white text-pmpurple hover:bg-gray-400"
                   >
-                    LEARN MORE
+                    LEARN MORE ABOUT US
                   </Button>
                 </Link>
               </div>
