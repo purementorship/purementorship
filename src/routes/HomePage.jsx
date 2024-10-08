@@ -97,6 +97,7 @@ export default function HomePage() {
           <motion.div
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             variants={fadeInAnimationVariants}
             className="flex flex-wrap justify-between items-center gap-2 pb-4 md:justify-center md:gap-12 lg:gap-20"
           >
