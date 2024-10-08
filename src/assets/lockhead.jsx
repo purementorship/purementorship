@@ -1,7 +1,7 @@
 const Lockhead = () => {
   return (
     <svg
-      width="251"
+      width="150"
       height="67"
       viewBox="0 0 251 67"
       fill="none"

@@ -1,7 +1,7 @@
 const Amazon = () => {
   return (
     <svg
-      width="139"
+      width="150"
       height="42"
       viewBox="0 0 139 42"
       fill="none"

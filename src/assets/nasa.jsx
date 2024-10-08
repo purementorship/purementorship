@@ -1,7 +1,7 @@
 const Nasa = () => {
   return (
     <svg
-      width="141"
+      width="150"
       height="119"
       viewBox="0 0 141 119"
       fill="none"

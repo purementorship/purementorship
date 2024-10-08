@@ -1,7 +1,7 @@
 const Exonmobil = () => {
   return (
     <svg
-      width="187"
+      width="150"
       height="104"
       viewBox="0 0 187 104"
       fill="none"

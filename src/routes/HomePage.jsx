@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import aboutUsHome from "@/assets/AboutUsHome.png";
-import homepageTest from "@/assets/homepage-test.png"
+import homepageTest from "@/assets/homepage-test.png";
 import Lockhead from "@/assets/lockhead";
 import Aws from "@/assets/aws";
 import Paloalto from "@/assets/paloalto";
@@ -61,7 +61,7 @@ export default function HomePage() {
             src={homepageTest}
             alt="Homepage Test"
           />
-          <div className="flex flex-col absolute xl:w-[45%]">
+          <div className="flex flex-col absolute xl:w-[40%]">
             <div className="px-8 py-4 w-full bg-pmpurple bg-opacity-50 xl:bg-gradient-to-r xl:from-pmpurple xl:from-60% lg:to-transparent">
               <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
                 Reach the highest
@@ -69,12 +69,8 @@ export default function HomePage() {
               <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
                 version of yourself
               </h1>
-              <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
-                with the right support.
-              </h1>
               <p className="font-light pt-6 text-center xl:text-left">
-                At Pure Mentorship, we connect you with experienced mentors for
-                personalized support - free of charge!
+                Pure Mentorship connects you with mentors for free!
               </p>
               <div className="flex pt-4 justify-center xl:justify-start">
                 <Link to="/AboutUs">
@@ -83,7 +79,7 @@ export default function HomePage() {
                     variant="link"
                     className="text-lg bg-white text-pmpurple hover:bg-gray-400"
                   >
-                    LEARN MORE ABOUT US
+                    LEARN MORE
                   </Button>
                 </Link>
               </div>
@@ -94,7 +90,7 @@ export default function HomePage() {
 
       {/* PAGE 2: LOGO GARDEN */}
       <section className="flex items-center justify-center bg-gray-100 snap-start">
-        <div className="container w-full flex flex-col items-center gap-5 m-4 lg:m-16">
+        <div className="container w-full flex flex-col items-center lg:m-16">
           <h2 className="text-center text-2xl md:text-3xl pb-5">
             Our mentors have worked with:
           </h2>
@@ -102,19 +98,22 @@ export default function HomePage() {
             initial="initial"
             whileInView="animate"
             variants={fadeInAnimationVariants}
-            className="flex flex-wrap justify-center items-center gap-12 md:gap-12 lg:gap-20"
+            className="flex flex-wrap justify-between items-center gap-2 pb-4 md:justify-center md:gap-12 lg:gap-20"
           >
             <div className="flex justify-center items-center">
               <Aws />
             </div>
             <div className="flex justify-center items-center">
-              <Lockhead />
-            </div>
-            <div className="flex justify-center items-center">
-              <Paloalto />
+              <Amazon />
             </div>
             <div className="flex justify-center items-center">
               <Nasa />
+            </div>
+            <div className="flex justify-center items-center">
+              <Rmi />
+            </div>
+            <div className="flex justify-center items-center">
+              <Paloalto />
             </div>
             <div className="flex justify-center items-center">
               <Nvidia />
@@ -126,10 +125,7 @@ export default function HomePage() {
               <Exonmobil />
             </div>
             <div className="flex justify-center items-center">
-              <Amazon />
-            </div>
-            <div className="flex justify-center items-center">
-              <Rmi />
+              <Lockhead />
             </div>
           </motion.div>
         </div>

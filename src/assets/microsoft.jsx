@@ -1,7 +1,7 @@
 const Microsoft = () => {
   return (
     <svg
-      width="171"
+      width="150"
       height="36"
       viewBox="0 0 171 36"
       fill="none"

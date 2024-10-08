@@ -1,7 +1,7 @@
 const Paloalto = () => {
   return (
     <svg
-      width="196"
+      width="150"
       height="58"
       version="1.1"
       viewBox="0 0 390.5 71.4"
