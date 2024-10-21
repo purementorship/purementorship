@@ -144,26 +144,38 @@ export default function HomePage() {
                       "[Mentorship] is really important because giving out your
                       experience and knowledge of how you're able to tap into
                       the industry is a pure sense of giving back to the
-                      community!"Unleash Your Creativity
+                      community!"
                     </h2>
                     <p className="text-lg text-gray-500 dark:text-gray-400">
                       -Arish B., Mentor
                     </p>
                   </div>
                 </CarouselItem>
-                <CarouselItem>
-                  <div className="flex h-full w-full flex-col items-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">Quote #2</h2>
+                <CarouselItem className="flex justify-center">
+                  <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
+                    <h2 className="text-3xl font-bold text-white">
+                      "Mentorship can influence a mentee's life for the better
+                      in a professional, academic, or personal aspect. Having a
+                      mentor that you look up to is motivating and influential
+                      to a mentee so they can reach their full potential."
+                    </h2>
                     <p className="text-lg text-gray-500 dark:text-gray-400">
-                      Bottom text.
+                      -Aadity J., Mentor
                     </p>
                   </div>
                 </CarouselItem>
-                <CarouselItem>
-                  <div className="flex h-full w-full flex-col items-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">Quote #3</h2>
+                <CarouselItem className="flex justify-center">
+                  <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
+                    <h2 className="text-3xl font-bold text-white">
+                      "Mentors have played a significant role in helping me
+                      advance through each step of my professional journey –
+                      right since I was an aspiring chemical engineer, to now
+                      being a changemaker in sustainability. I joined Pure
+                      Mentorship to give back to the community and pay it
+                      forward as a mentor."
+                    </h2>
                     <p className="text-lg text-gray-500 dark:text-gray-400">
-                      Bottom text.
+                      -Anisha K., Mentor
                     </p>
                   </div>
                 </CarouselItem>
