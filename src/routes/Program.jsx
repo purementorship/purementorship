@@ -12,8 +12,10 @@ const Program = () => {
   return (
     <PageLayout className="bg-gray-100">
       <h1 className="text-center py-6 px-12 lg:text-3xl font-bold text-pmpurple">
-        We are currently revamping our program model to ensure we create better
-        and more rewarding mentorship matches!
+        We are redoing our matching model to ensure program satisfaction!
+      </h1>
+      <h1 className="text-center pb-4 px-12 lg:text-3xl font-bold text-pmpurple">
+        Here is Pure Mentorship’s current program flow.
       </h1>
       <VerticalTimeline>
         <div id="timeline-element-and-icon" className="flex items-end">

@@ -71,7 +71,7 @@ const Team = () => {
       domain: "Data Science",
     },
     {
-      name: "Diane S.",
+      name: "Thenu S.",
       picture: thenuPicture,
       school: "San Jose State University",
       domain: "Engineering Management, Marketing",

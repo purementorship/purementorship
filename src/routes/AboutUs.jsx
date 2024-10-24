@@ -110,11 +110,11 @@ export default function AboutUs() {
             className="flex flex-col items-start pb-6 md:pb-0 text-md md:text-lg w-full lg:w-1/2 max-w-max gap-4"
           >
             <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
-              Meet the founder
+              Meet the Founder
             </h1>
-            <h3>Diane Senthil</h3>
+            <h3>Thenu Senthil</h3>
             <p className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              "Hello! My name is Diane and I am a nationally-recognized leader
+              "Hello! My name is Thenu and I am a nationally-recognized leader
               and the founder of Pure Mentorship! I strongly believe in the
               potential of each individual and know that support from a mentor
               at a young age can propel them toward a lifetime of success.”
@@ -124,7 +124,7 @@ export default function AboutUs() {
                 target="_blank"
                 href="https://dianeportfolio01.wixsite.com/portfolio"
               >
-                <Button onClick={handleClick}>About Diane</Button>
+                <Button onClick={handleClick}>Explore Website</Button>
               </a>
             </div>
           </motion.div>
@@ -168,7 +168,7 @@ export default function AboutUs() {
                 target="_blank"
                 href="https://purementorship.wixsite.com/my-site/blog-1"
               >
-                <Button onClick={handleClick}>Visit Our Blog</Button>
+                <Button onClick={handleClick}>Visit Old Blog</Button>
               </a>
             </div>
           </motion.div>
@@ -182,8 +182,33 @@ export default function AboutUs() {
             className="flex flex-col items-start text-md md:text-lg w-full gap-4 lg:px-10"
           >
             <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
-              Read Our Interns Letters
+              What Our Interns Say
             </h1>
+            <div className="grid grid-cols-2">
+              <div className="flex flex-col gap-2">
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-vi-huynh"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Vi Huynh
+                </a>
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-scott-bihag"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Scott Bihag
+                </a>
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-bianca-cura"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Bianca Cura
+                </a>
+              </div>
+            </div>
             <div className="flex flex-col gap-2">
               <a
                 target="_blank"
