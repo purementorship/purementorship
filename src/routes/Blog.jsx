@@ -76,6 +76,7 @@ export default function Blog() {
             <motion.div
               initial="initial"
               whileInView="animate"
+              viewport={{ once: true }}
               variants={fadeInAnimationVariants}
             >
               <div id="text-box">
@@ -119,6 +120,7 @@ export default function Blog() {
               <motion.div
                 initial="initial"
                 whileInView="animate"
+                viewport={{ once: true }}
                 variants={fadeInAnimationVariants}
               >
                 <div

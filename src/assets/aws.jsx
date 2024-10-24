@@ -2,7 +2,7 @@ const Aws = ({ className }) => {
   return (
     <svg
       {...className}
-      width="99"
+      width="150"
       height="59"
       viewBox="0 0 99 59"
       fill="none"

@@ -24,6 +24,7 @@ const JoinUs = () => {
         <motion.div
           initial="initial"
           whileInView="animate"
+          viewport={{ once: true}}
           variants={fadeInAnimationVariants}
           className="container px-4"
         >

@@ -39,7 +39,7 @@ const Footer = () => {
             to="/AboutUs"
             onClick={() => window.scrollTo(0, 0)}
           >
-            About
+            About Us
           </Link>
           <Link
             className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"

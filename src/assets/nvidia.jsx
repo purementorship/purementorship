@@ -1,7 +1,7 @@
 const Nvidia = () => {
   return (
     <svg
-      width="152"
+      width="150"
       height="28"
       viewBox="0 0 152 28"
       fill="none"

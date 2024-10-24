@@ -100,6 +100,7 @@ export default function BlogAll() {
               <motion.div
                 initial="initial"
                 whileInView="animate"
+                viewport={{ once: true }}
                 variants={fadeInAnimationVariants}
               >
                 <div

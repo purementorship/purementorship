@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import PageLayout from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
-import homepage from "@/assets/homepage.jpg";
 import happyStudent from "@/assets/happy-student.jpg";
 import founderHeadshot from "@/assets/FounderHeadshot.png";
 import { Link } from "react-router-dom";
@@ -16,7 +15,7 @@ export default function AboutUs() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.5,
+        delay: 0.1,
       },
     },
   };
@@ -30,7 +29,7 @@ export default function AboutUs() {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 1,
+        delay: 0.5,
       },
     },
   };
@@ -41,53 +40,15 @@ export default function AboutUs() {
 
   return (
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
-      {/* PAGE 1: WELCOME */}
-      <section className="flex items-center justify-center h-screen snap-start">
-        <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0 w-full">
-          <img className="h-full w-full object-cover" src={homepage} />
-          <div className="flex flex-col absolute lg:w-2/5 gap-3">
-            <div className="w-full h-0.5">
-              <div className="w-full h-1.5 hidden md:block bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
-            </div>
-            <h1 className="text-5xl text-center lg:text-left mx-14">
-              Reach the highest
-            </h1>
-            <h1 className="text-5xl text-center lg:text-left mx-14">
-              version of yourself
-            </h1>
-            <h1 className="text-5xl text-center lg:text-left mx-14">
-              with the right support.
-            </h1>
-
-            <div className="p-5 w-full bg-gradient-to-r from-pmpurple from-60% to-transparent">
-              <p className="font-light mx-10 text-center lg:text-left">
-                At Pure Mentorship, we connect you with experienced mentors in
-                tech and entrepreneurship for personalized support - free of
-                charge!
-              </p>
-            </div>
-            <div className="flex flex-col items-center lg:items-start">
-              <Link to="/JoinUs">
-                <Button
-                  onClick={handleClick}
-                  className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400"
-                >
-                  Join Today
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* WHO ARE WE */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-8">
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <motion.div
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             variants={fadeInAnimationVariants}
-            className="grid justify-items-center lg:flex lg:flex-row pb-20 w-full
+            className="grid justify-items-center lg:flex lg:flex-row pb-6 w-full
           justify-center items-center gap-20"
           >
             <img
@@ -102,9 +63,10 @@ export default function AboutUs() {
           <motion.div
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             variants={fadeInAnimationVariants2}
           >
-            <div className="space-y-4">
+            <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
                 WHO ARE WE?
               </h2>
@@ -137,20 +99,22 @@ export default function AboutUs() {
       </section>
 
       {/* MEET THE FOUNDER  */}
-      <div className="flex w-full min-h-[100dvh] items-center justify-center bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25">
-        <div className="container mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 px-4 md:flex-row md:gap-16">
+      <div className="flex w-full items-center justify-between bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25 py-6">
+        <div className="container mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 px-4 md:flex-row md:gap-16 lg:flex-row lg:justify-between">
+          {/* Text Section */}
           <motion.div
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             variants={fadeInAnimationVariants2}
-            className="flex flex-col items-start pb-9 md:pb-0 text-md md:text-lg w-full max-w-max gap-4"
+            className="flex flex-col items-start pb-6 md:pb-0 text-md md:text-lg w-full lg:w-1/2 max-w-max gap-4"
           >
-            <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-5xl lg:text-6xl">
-              Meet the founder
+            <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
+              Meet the Founder
             </h1>
-            <h3>Diane Senthil</h3>
-            <p className="max-w-md text-gray-500 dark:text-gray-400">
-              "Hello! My name is Diane and I am a nationally-recognized leader
+            <h3>Thenu Senthil</h3>
+            <p className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              "Hello! My name is Thenu and I am a nationally-recognized leader
               and the founder of Pure Mentorship! I strongly believe in the
               potential of each individual and know that support from a mentor
               at a young age can propel them toward a lifetime of success.”
@@ -159,36 +123,118 @@ export default function AboutUs() {
               <a
                 target="_blank"
                 href="https://dianeportfolio01.wixsite.com/portfolio"
-                className="border border-zinc-300 px-3 py-2 rounded-xl bg-zinc-300"
               >
-                ABOUT DIANE➡
+                <Button onClick={handleClick}>Explore Website</Button>
               </a>
             </div>
           </motion.div>
+
+          {/* Image Section */}
           <motion.img
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             variants={fadeInAnimationVariants}
             alt="Hero Image"
-            className="aspect-square flex-auto w-11/12 max-w-max overflow-hidden rounded-xl object-cover"
+            className="aspect-square w-full lg:w-1/2 max-w-max overflow-hidden rounded-xl object-cover"
             height={550}
             src={founderHeadshot}
             width={550}
           />
         </div>
       </div>
-      {/* <footer className="bg-gray-100 py-2 px-4 dark:bg-gray-800">
-        <div className="container mx-auto flex justify-end">
-          <div className="flex gap-2">
-            <Link to="/">
-              <Button onClick={handleClick}>Home</Button>
-            </Link>
-            <Button variant="link" to="/">
-              Our Team
-            </Button>
-          </div>
+
+      {/* BLOG */}
+      <section className="w-full py-6">
+        <div className="container mx-auto grid items-start gap-12 px-4 md:px-6 md:grid-cols-2 lg:gap-10">
+          {/* Text Section: Explore Our Blog */}
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInAnimationVariants2}
+            className="flex flex-col items-start text-md md:text-lg w-full gap-4 lg:px-28"
+          >
+            <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
+              Explore Our Blog
+            </h1>
+            <p className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Stay updated with the latest stories, advice, and tips from Pure
+              Mentorship. Get inspired and learn more about how you can thrive
+              with the right guidance!
+            </p>
+            <div className="flex gap-2">
+              <a
+                target="_blank"
+                href="https://purementorship.wixsite.com/my-site/blog-1"
+              >
+                <Button onClick={handleClick}>Visit Old Blog</Button>
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Text Section: Our Interns Letters */}
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInAnimationVariants2}
+            className="flex flex-col items-start text-md md:text-lg w-full gap-4 lg:px-10"
+          >
+            <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
+              What Our Interns Say
+            </h1>
+            <div className="grid grid-cols-2">
+              <div className="flex flex-col gap-2">
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-vi-huynh"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Vi Huynh
+                </a>
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-scott-bihag"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Scott Bihag
+                </a>
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-bianca-cura"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Bianca Cura
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <a
+                target="_blank"
+                href="https://purementorship.wixsite.com/my-site/post/intern-letter-vi-huynh"
+                className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+              >
+                Intern Letter: Vi Huynh
+              </a>
+              <a
+                target="_blank"
+                href="https://purementorship.wixsite.com/my-site/post/intern-letter-scott-bihag"
+                className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+              >
+                Intern Letter: Scott Bihag
+              </a>
+              <a
+                target="_blank"
+                href="https://purementorship.wixsite.com/my-site/post/intern-letter-bianca-cura"
+                className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+              >
+                Intern Letter: Bianca Cura
+              </a>
+            </div>
+          </motion.div>
         </div>
-      </footer> */}
+      </section>
     </PageLayout>
   );
 }

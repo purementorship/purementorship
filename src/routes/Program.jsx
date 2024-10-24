@@ -7,16 +7,16 @@ import PageLayout from "@/components/PageLayout";
 import { Search } from "lucide-react";
 import { UserCheck } from "lucide-react";
 import { Handshake } from "lucide-react";
-import downArrow from "@/assets/downArrow.png";
 
 const Program = () => {
   return (
     <PageLayout className="bg-gray-100">
-      <img
-        id="animated-icon"
-        src={downArrow}
-        className="mx-10 mb-32 hidden md:block absolute right-16 top-96"
-      />
+      <h1 className="text-center py-6 px-12 lg:text-3xl font-bold text-pmpurple">
+        We are redoing our matching model to ensure program satisfaction!
+      </h1>
+      <h1 className="text-center pb-4 px-12 lg:text-3xl font-bold text-pmpurple">
+        Here is Pure Mentorship’s current program flow.
+      </h1>
       <VerticalTimeline>
         <div id="timeline-element-and-icon" className="flex items-end">
           <VerticalTimelineElement
@@ -27,20 +27,15 @@ const Program = () => {
               color: "#fff",
             }}
           >
-            <h3 className="vertical-timeline-element-title text-3xl font-bold text-pmpurple">
+            <h3 className="vertical-timeline-element-title text-2xl font-bold text-pmpurple">
               The Journey Begins: The Discovery Meeting
             </h3>
             <p>
-              Welcome to the mentorship program! We are excited to embark on
-              this growth journey with you. To get started, simply fill out the
-              onboarding form, and we'll invite you to a special "Discovery
-              Meeting." During this meeting, we'll introduce you to the program
-              and work together to develop your Individual Growth Plan (IGP).
-              Your IGP is an essential tool that helps us understand your
-              aspirations and "SMART" goals. It's a collaborative process,
-              allowing us to tailor the mentorship experience to your unique
-              needs. By sharing your dreams and passions, we can make sure you
-              get the most out of this mentoring adventure.
+              Welcome to Pure Mentorship! Your first step is to fill out our
+              onboarding form. We'll then invite you to a Discovery Meeting to
+              introduce you to the program and work on your Individual Growth
+              Plan (IGP). This plan will help us understand your goals and
+              aspirations, ensuring we tailor your experience to fit your needs.
             </p>
           </VerticalTimelineElement>
         </div>
@@ -52,17 +47,14 @@ const Program = () => {
             color: "#fff",
           }}
         >
-          <h3 className="vertical-timeline-element-title text-3xl font-bold text-pmpurple">
-            Finding the Perfect Match: Exploring Potential Mentors
+          <h3 className="vertical-timeline-element-title text-2xl font-bold text-pmpurple">
+            Getting Matched
           </h3>
           <p>
-            At Pure Mentorship, we take great care in finding the right mentor
-            for you. We'll carefully consider all the details in your IGP to
-            make the perfect match. Once we've found your ideal mentor, we'll
-            inform you, and you can also explore their profile on our website's
-            "Mentors" page. We value your input throughout the matching process,
-            and your feelings matter to us. If you have any questions or
-            concerns, we're here to listen and support you.
+            We carefully review your IGP to match you with the right mentor.
+            Once we've found a good fit, you'll be notified and can check their
+            profile on our "Mentors" page. Your input is important, and we
+            address all concerns about your mentorship process.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -73,26 +65,14 @@ const Program = () => {
             color: "#fff",
           }}
         >
-          <h3 className="vertical-timeline-element-title text-3xl font-bold text-pmpurple">
-            Building the Connection: The First M&M Meeting
+          <h3 className="vertical-timeline-element-title text-2xl font-bold text-pmpurple">
+            First M&M Meeting
           </h3>
           <p>
-            Now comes the exciting part - your first M&M (Meet & Match) meeting!
-            This meeting is an opportunity for you and your mentor to get to
-            know each other. Feel free to be yourself and express your thoughts
-            and ambitions. We believe in the power of authentic connections.
-            During this meeting, your IGP will serve as a guide for the
-            discussion. Your mentor will gain valuable insights into your goals
-            and aspirations, helping them provide the best support and guidance.
-            Together, you'll explore ways to achieve your objectives. Remember,
-            the decision to move forward with your mentor is entirely up to you.
-            We want you to feel 100% comfortable with your mentor choice. If you
-            feel a strong connection, you can signify this by both signing off
-            on the "Time Commitment" section of your IGP. Throughout this
-            mentorship journey, we're here to cheer you on and provide guidance
-            whenever you need it. We believe in your potential and are committed
-            to helping you grow and flourish. Let's make this mentorship
-            experience a transformative and empowering one together!
+            In your first meeting with your mentor, you'll get to know each
+            other and discuss your IGP. This helps your mentor understand your
+            goals and how to support you. Your mentor and all of us at Pure
+            Mentorship are here to support you every step of the way!
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

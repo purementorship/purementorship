@@ -1,12 +1,12 @@
 const Amazon = () => {
   return (
     <svg
-      width="139"
+      width="150"
       height="42"
       viewBox="0 0 139 42"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <rect width="139" height="42" fill="url(#pattern0_265_3656)" />
       <defs>

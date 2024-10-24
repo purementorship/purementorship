@@ -7,8 +7,8 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import aboutUsHome from "@/assets/AboutUsHome.png";
+import homepageTest from "@/assets/homepage-test.png";
 import Lockhead from "@/assets/lockhead";
 import Aws from "@/assets/aws";
 import Paloalto from "@/assets/paloalto";
@@ -41,7 +41,7 @@ export default function HomePage() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.5,
+        delay: 0.1,
       },
     },
   };
@@ -50,120 +50,84 @@ export default function HomePage() {
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
       {/* PAGE 1: WELCOME */}
       <section className="flex items-center justify-center h-screen snap-start">
-        <Carousel className="w-full">
-          <CarouselContent>
-            <CarouselItem>
-              <div className="flex flex-col items-center justify-center lg:items-start h-screen text-white md:shrink-0">
-                <img className="h-full w-full object-cover" src={aboutUsHome} />
-                <div className="flex flex-col absolute lg:w-2/5 gap-3">
-                  <div className="w-full h-0.5">
-                    <div className="w-full h-1.5 bg-gradient-to-r from-transparent from-0.1% via-pmpurple via-5% to-transparent"></div>
-                  </div>
-                  <h1 className="text-5xl text-center lg:text-left mx-14">
-                    Reach the highest
-                  </h1>
-                  <h1 className="text-5xl text-center lg:text-left mx-14">
-                    version of yourself
-                  </h1>
-                  <h1 className="text-5xl text-center lg:text-left mx-14">
-                    with the right support.
-                  </h1>
-
-                  <div className="p-5 w-full bg-gradient-to-r from-pmpurple from-60% to-transparent">
-                    <p className="font-light mx-10 text-center lg:text-left">
-                      At Pure Mentorship, we connect you with experienced
-                      mentors in tech and entrepreneurship for personalized
-                      support - free of charge!
-                    </p>
-                  </div>
-
-                  <div className="flex flex-col items-center lg:items-start">
-                    <Link to="/JoinUs">
-                      <Button
-                        onClick={handleClick}
-                        className="bg-white text-pmpurple lg:mx-14 lg:mr-0 hover:bg-gray-400"
-                      >
-                        Join Today
-                      </Button>
-                    </Link>
-                    <div className="flex pt-1 items-center">
-                      <Link to="/AboutUs">
-                        <Button
-                          onClick={handleClick}
-                          variant="link"
-                          className="text-pmpurplelight font-bold mr-0 lg:mx-14 lg:mr-1 px-1"
-                        >
-                          LEARN MORE
-                        </Button>
-                      </Link>
-                      <ArrowRight className="text-pmpurplelight" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CarouselItem>
-            <CarouselItem>
-              <div className="flex flex-col items-center justify-center h-screen text-white">
-                <h1 className="text-5xl font-bold mb-4">
-                  Explore Our Features
-                </h1>
-                <p className="text-xl mb-8">Unlock the power of our app</p>
-                <div className="space-x-4">
-                  <Link
-                    className="inline-flex items-center justify-center h-10 px-6 rounded-md bg-white text-[#6366F1] font-medium transition-colors hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-                    href="#"
+        <div className="flex flex-col items-center justify-center xl:items-start h-screen text-white md:shrink-0 w-full">
+          <img
+            className="h-full w-full object-cover xl:hidden"
+            src={aboutUsHome}
+            alt="About Us"
+          />
+          <img
+            className="hidden xl:block xl:h-full xl:w-full xl:object-cover"
+            src={homepageTest}
+            alt="Homepage Test"
+          />
+          <div className="flex flex-col absolute xl:w-[40%]">
+            <div className="px-8 py-4 w-full bg-pmpurple bg-opacity-50 xl:bg-gradient-to-r xl:from-pmpurple xl:from-60% lg:to-transparent">
+              <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
+                Reach the highest
+              </h1>
+              <h1 className="text-3xl md:text-5xl text-center font-semibold xl:text-left">
+                version of yourself
+              </h1>
+              <p className="font-light pt-6 text-center xl:text-left">
+                Pure Mentorship connects you with mentors for free!
+              </p>
+              <div className="flex pt-4 justify-center xl:justify-start">
+                <Link to="/AboutUs">
+                  <Button
+                    onClick={handleClick}
+                    variant="link"
+                    className="text-lg bg-white text-pmpurple hover:bg-gray-400"
                   >
-                    Get Started
-                  </Link>
-                  <Link
-                    className="inline-flex items-center justify-center h-10 px-6 rounded-md border border-white text-white font-medium transition-colors hover:bg-white hover:text-[#6366F1] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-                    href="#"
-                  >
-                    Learn More
-                  </Link>
-                </div>
+                    LEARN MORE
+                  </Button>
+                </Link>
               </div>
-            </CarouselItem>
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 rounded-full bg-gray-900/50 p-2">
-            <ChevronLeftIcon className="h-8 w-8" />
-            <span className="sr-only">Previous</span>
-          </CarouselPrevious>
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 rounded-full bg-gray-900/50 p-2">
-            <ChevronRightIcon className="h-8 w-8" />
-            <span className="sr-only">Next</span>
-          </CarouselNext>
-        </Carousel>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* PAGE 2: LOGO GARDEN */}
-      <section className="flex items-center justify-center bg-gray-100 snap-start h-2/3">
-        <div className="container w-full px-4 md:px-6 flex flex-col items-center gap-5 m-10 lg:m-96">
-          <h2 className="text-center text-3xl pb-10 lg:pb-24">
+      <section className="flex items-center justify-center bg-gray-100 snap-start">
+        <div className="container w-full flex flex-col items-center lg:m-16">
+          <h2 className="text-center text-2xl md:text-3xl pb-5">
             Our mentors have worked with:
           </h2>
           <motion.div
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             variants={fadeInAnimationVariants}
-            className="grid lg:flex lg:flex-row pb-20 w-full justify-center items-center gap-20"
+            className="flex flex-wrap justify-between items-center gap-2 pb-4 md:justify-center md:gap-12 lg:gap-20"
           >
-            <Aws />
-            <Lockhead />
-            <Paloalto />
-            <Nasa />
-            <Nvidia />
-          </motion.div>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={fadeInAnimationVariants}
-            className="grid justify-items-center lg:flex lg:flex-row justify-center w-full items-center gap-20"
-          >
-            <Microsoft />
-            <Exonmobil />
-            <Amazon />
-            <Rmi />
+            <div className="flex justify-center items-center">
+              <Aws />
+            </div>
+            <div className="flex justify-center items-center">
+              <Amazon />
+            </div>
+            <div className="flex justify-center items-center">
+              <Nasa />
+            </div>
+            <div className="flex justify-center items-center">
+              <Rmi />
+            </div>
+            <div className="flex justify-center items-center">
+              <Paloalto />
+            </div>
+            <div className="flex justify-center items-center">
+              <Nvidia />
+            </div>
+            <div className="flex justify-center items-center">
+              <Microsoft />
+            </div>
+            <div className="flex justify-center items-center">
+              <Exonmobil />
+            </div>
+            <div className="flex justify-center items-center">
+              <Lockhead />
+            </div>
           </motion.div>
         </div>
       </section>
@@ -180,26 +144,38 @@ export default function HomePage() {
                       "[Mentorship] is really important because giving out your
                       experience and knowledge of how you're able to tap into
                       the industry is a pure sense of giving back to the
-                      community!"Unleash Your Creativity
+                      community!"
                     </h2>
                     <p className="text-lg text-gray-500 dark:text-gray-400">
                       -Arish B., Mentor
                     </p>
                   </div>
                 </CarouselItem>
-                <CarouselItem>
-                  <div className="flex h-full w-full flex-col items-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">Quote #2</h2>
+                <CarouselItem className="flex justify-center">
+                  <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
+                    <h2 className="text-3xl font-bold text-white">
+                      "Mentorship can influence a mentee's life for the better
+                      in a professional, academic, or personal aspect. Having a
+                      mentor that you look up to is motivating and influential
+                      to a mentee so they can reach their full potential."
+                    </h2>
                     <p className="text-lg text-gray-500 dark:text-gray-400">
-                      Bottom text.
+                      -Aadity J., Mentor
                     </p>
                   </div>
                 </CarouselItem>
-                <CarouselItem>
-                  <div className="flex h-full w-full flex-col items-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">Quote #3</h2>
+                <CarouselItem className="flex justify-center">
+                  <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
+                    <h2 className="text-3xl font-bold text-white">
+                      "Mentors have played a significant role in helping me
+                      advance through each step of my professional journey –
+                      right since I was an aspiring chemical engineer, to now
+                      being a changemaker in sustainability. I joined Pure
+                      Mentorship to give back to the community and pay it
+                      forward as a mentor."
+                    </h2>
                     <p className="text-lg text-gray-500 dark:text-gray-400">
-                      Bottom text.
+                      -Anisha K., Mentor
                     </p>
                   </div>
                 </CarouselItem>
@@ -225,7 +201,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 What is the time commitment needed to be a mentor?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Mentors are paired with a mentee based on their schedule and are
                 required to meet with their mentee at least biweekly for an hour
                 over the course of 1 year.
@@ -236,7 +212,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 How will a mentee get matched to the right mentor?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Each mentee and mentor meets with the founder in order to gain a
                 thorough understanding of their profiles and where help is
                 needed. Each pairing is made based off compatibility and
@@ -249,7 +225,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 What is the internship program like?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Each intern designs their own experience by deciding what
                 project they will work on and what skills they will employ.
                 Interns may choose to continue with the team after a successful
@@ -263,7 +239,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 How does mentorship benefit young students?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 We encourage students to succeed in school. “A vast majority of
                 educators — 95 % — say every student can benefit from having a
                 one-on-one mentor, according to a recent survey of 1,418 grade
@@ -277,7 +253,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 How does mentorship benefit young professionals?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 We give students the confidence to achieve in their careers.
                 “Cornell University’s School of Industrial and Labor Relations
                 found that mentoring programs boosted minority representation at
@@ -293,7 +269,7 @@ export default function HomePage() {
               <AccordionTrigger className="text-left">
                 Will there be in-person mentoring?
               </AccordionTrigger>
-              <AccordionContent className="text-pmpurple italic">
+              <AccordionContent className="text-pmpurple">
                 Currently we operate solely online.
               </AccordionContent>
             </AccordionItem>

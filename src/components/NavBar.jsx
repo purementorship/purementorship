@@ -10,7 +10,7 @@ const NavBar = () => {
       {/*Desktop Navbar*/}
       <div className="items-center flex shrink-0 gap-5 pl-10">
         <Link to="/">
-          <img src={logo} />
+          <img src={logo} alt="Pure Mentorship Logo" />
         </Link>
         <div className="flex flex-col">
           <span className="text-pmpurple font-bold text-lg -mb-1.5">
@@ -31,7 +31,7 @@ const NavBar = () => {
           </SheetTrigger>
           <SheetContent side="right">
             <Link className="flex items-center gap-2" href="#">
-              <img src={logo} className="h-6 w-6" />
+              <img src={logo} alt="Pure Mentorship Logo" className="h-6 w-6" />
               <span className="font-semibold pt-1 text-pmpurple">
                 PURE MENTORSHIP
               </span>
@@ -44,7 +44,7 @@ const NavBar = () => {
                 className="flex items-center gap-2 font-medium"
                 to="/AboutUs"
               >
-                About
+                About Us
               </Link>
               <Link
                 className="flex items-center gap-2 font-medium"
