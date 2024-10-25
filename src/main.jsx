@@ -7,9 +7,6 @@ import AboutUs from "@/routes/AboutUs";
 import Team from "@/routes/Team";
 import Program from "@/routes/Program";
 import JoinUs from "@/routes/JoinUs";
-import Blog from "@/routes/Blog";
-import BlogAll from "@/routes/BlogAll";
-import BlogAllExpand from "./routes/BlogAllExpand.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,18 +20,6 @@ const router = createBrowserRouter([
   {
     path: "/Team",
     element: <Team />,
-  },
-  {
-    path: "/Blog",
-    element: <Blog />,
-  },
-  {
-    path: "/BlogAll",
-    element: <BlogAll />,
-  },
-  {
-    path: "/BlogAllExpand",
-    element: <BlogAllExpand />,
   },
   {
     path: "/Program",

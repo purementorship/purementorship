@@ -55,9 +55,6 @@ const NavBar = () => {
               <Link className="flex items-center gap-2 font-medium" to="/Team">
                 Our Team
               </Link>
-              <Link className="flex items-center gap-2 font-medium" to="/Blog">
-                Blog
-              </Link>
               <Link
                 className="flex items-center gap-2 font-medium"
                 to="/JoinUs"
@@ -80,9 +77,6 @@ const NavBar = () => {
         </Link>
         <Link className="hover:underline" to="/Team">
           Our Team
-        </Link>
-        <Link className="hover:underline" to="/Blog">
-          Blog
         </Link>
         <Button
           className="bg-pmpurple text-white hover:bg-gray-400 hover:text-black"
