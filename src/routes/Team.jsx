@@ -154,12 +154,12 @@ const Team = () => {
                     {mentor.name}
                   </CardTitle>
                   <CardDescription>
-                    <span className="text-sm text-gray-600">
+                    <div className="text-sm text-gray-600">
                       {mentor.school}
-                    </span>
-                    <span className="text-sm text-gray-600">
+                    </div>
+                    <div className="text-sm text-gray-600">
                       {mentor.domain}
-                    </span>
+                    </div>
                   </CardDescription>
                 </CardContent>
               </Card>
