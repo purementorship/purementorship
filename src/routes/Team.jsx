@@ -1,5 +1,4 @@
 import PageLayout from "@/components/PageLayout";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -14,7 +13,6 @@ import estherPicture from "@/assets/mentors/esther.png";
 import harunaPicture from "@/assets/mentors/haruna.png";
 import josephPicture from "@/assets/mentors/joseph.png";
 import leoPicture from "@/assets/mentors/leo.png";
-import marcosPicture from "@/assets/mentors/marcos.png";
 import michaelPicture from "@/assets/mentors/michael.png";
 import riddhiPicture from "@/assets/mentors/riddhi.png";
 import rominaPicture from "@/assets/mentors/romina.png";
@@ -45,6 +43,12 @@ const Team = () => {
       picture: harunaPicture,
       school: "University of Houston-Victoria",
       domain: "Entrepreneurship",
+    },
+    {
+      name: "Joseph B.",
+      picture: josephPicture,
+      school: "San Jose State University",
+      domain: "Space",
     },
     {
       name: "Leo S.",
@@ -94,7 +98,7 @@ const Team = () => {
 
   return (
     <PageLayout className="flex flex-col">
-      <section className="bg-pmorange flex justify-center items-center py-20">
+      <section className="bg-pmorange flex justify-center items-center py-4">
         <div className="flex flex-col text-white p-6 md:p-10 w-full md:w-3/4 gap-6 md:gap-3">
           <h1 className="text-4xl font-bold">Mentors</h1>
           <p className="font-light">
@@ -113,12 +117,13 @@ const Team = () => {
             and reach your full potential in the tech industry.
           </p>
           <p>
-            Interested in becoming a mentor at Pure Mentorship? Click the button
-            below to be redirected to the latest version of our application:
+            Interested in becoming a mentor at Pure Mentorship? Email us at
+            <a href="mailto:purementorship@gmail.com" className="font-bold">
+              {" "}
+              purementorship@gmail.com
+            </a>
+            .
           </p>
-          <Button className="font-light bg-white text-pmpurple hover:bg-gray-200 w-40">
-            Apply Today!
-          </Button>
         </div>
       </section>
       <section className="flex items-center justify-center">
@@ -149,8 +154,12 @@ const Team = () => {
                     {mentor.name}
                   </CardTitle>
                   <CardDescription>
-                    <p className="text-sm text-gray-600">{mentor.school}</p>
-                    <p className="text-sm text-gray-600">{mentor.domain}</p>
+                    <div className="text-sm text-gray-600">
+                      {mentor.school}
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      {mentor.domain}
+                    </div>
                   </CardDescription>
                 </CardContent>
               </Card>

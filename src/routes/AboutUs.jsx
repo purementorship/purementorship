@@ -184,7 +184,8 @@ export default function AboutUs() {
             <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
               What Our Interns Say
             </h1>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 gap-4">
+              {/* Column 1 */}
               <div className="flex flex-col gap-2">
                 <a
                   target="_blank"
@@ -208,29 +209,31 @@ export default function AboutUs() {
                   Intern Letter: Bianca Cura
                 </a>
               </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <a
-                target="_blank"
-                href="https://purementorship.wixsite.com/my-site/post/intern-letter-vi-huynh"
-                className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
-              >
-                Intern Letter: Vi Huynh
-              </a>
-              <a
-                target="_blank"
-                href="https://purementorship.wixsite.com/my-site/post/intern-letter-scott-bihag"
-                className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
-              >
-                Intern Letter: Scott Bihag
-              </a>
-              <a
-                target="_blank"
-                href="https://purementorship.wixsite.com/my-site/post/intern-letter-bianca-cura"
-                className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
-              >
-                Intern Letter: Bianca Cura
-              </a>
+
+              {/* Column 2 */}
+              <div className="flex flex-col gap-2">
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-arav-ravula"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Arav Ravula
+                </a>
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-christina-kim"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Christina Kim
+                </a>
+                <a
+                  target="_blank"
+                  href="https://purementorship.wixsite.com/my-site/post/intern-letter-arushi-ravula"
+                  className="max-w-md text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed underline hover:text-blue-500"
+                >
+                  Intern Letter: Arushi Ravula
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
