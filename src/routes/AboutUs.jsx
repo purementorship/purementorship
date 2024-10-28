@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import happyStudent from "@/assets/happy-student.jpg";
 import founderHeadshot from "@/assets/FounderHeadshot.png";
 import { Link } from "react-router-dom";
+import HistoryCarousel from "@/components/HistoryCarousel";
 
 export default function AboutUs() {
   const fadeInAnimationVariants = {
@@ -42,18 +43,18 @@ export default function AboutUs() {
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
       {/* WHO ARE WE */}
       <section className="w-full py-8">
-        <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+        <div className="container grid items-center gap-4 px-4 md:grid-cols-2 lg:gap-8">
           <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInAnimationVariants}
             className="grid justify-items-center lg:flex lg:flex-row pb-6 w-full
-          justify-center items-center gap-20"
+          justify-center items-center gap-10"
           >
             <img
               alt="Image"
-              className="mx-auto aspect-square w-full max-w-max overflow-hidden rounded-xl object-cover"
+              className="aspect-square w-96 rounded-xl object-cover"
               height={550}
               src={happyStudent}
               width={550}
@@ -67,26 +68,16 @@ export default function AboutUs() {
             variants={fadeInAnimationVariants2}
           >
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+              <h2 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
                 WHO ARE WE?
               </h2>
-              <h3 className="text-2xl font-bold tracking-tighter">
-                Pure Mentorship is a platform created by students, for students.
-              </h3>
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Pure Mentorship is a free-of-charge program that connects
-                mentees with successful and well-rounded mentors. Through 1-on-1
-                meetings and SMART goal-setting, mentors support their students
-                in their academic, professional, and social lives and identify
-                ares for improvement.
-              </p>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Our mentors are college students, graduate students, and recent
-                grads who have gone through the same struggles and are perfectly
-                able to relate to mentees. We are passionate about helping
-                students reach their fullest potential and strive to provide
-                them with the support, guidance, and resources they need to
-                succeed academically and professionally.
+                Pure Mentorship is a free, student-run platform that connects
+                students with mentors who’ve been in their shoes. Through
+                personal guidance and SMART goal-setting, our mentors help
+                students excel in their academic, professional, and personal
+                lives. We’re all about empowering students to reach their full
+                potential.
               </p>
               <div className="flex gap-2">
                 <Link to="/JoinUs">
@@ -98,9 +89,11 @@ export default function AboutUs() {
         </div>
       </section>
 
+      <HistoryCarousel />
+
       {/* MEET THE FOUNDER  */}
-      <div className="flex w-full items-center justify-between bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25 py-6">
-        <div className="container mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 px-4 md:flex-row md:gap-16 lg:flex-row lg:justify-between">
+      <div className="flex w-full items-center justify-between py-6">
+        <div className="container mx-auto flex max-w-6xl flex-col-reverse items-center gap-4 px-4 md:flex-row lg:gap-8 lg:flex-row lg:justify-between">
           {/* Text Section */}
           <motion.div
             initial="initial"
@@ -136,7 +129,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
             variants={fadeInAnimationVariants}
             alt="Hero Image"
-            className="aspect-square w-full lg:w-1/2 max-w-max overflow-hidden rounded-xl object-cover"
+            className="aspect-square w-96 rounded-xl object-cover"
             height={550}
             src={founderHeadshot}
             width={550}
@@ -145,7 +138,7 @@ export default function AboutUs() {
       </div>
 
       {/* BLOG */}
-      <section className="w-full py-6">
+      <section className="w-full py-10 bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25">
         <div className="container mx-auto grid items-start gap-12 px-4 md:px-6 md:grid-cols-2 lg:gap-10">
           {/* Text Section: Explore Our Blog */}
           <motion.div
@@ -184,7 +177,7 @@ export default function AboutUs() {
             <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl">
               What Our Interns Say
             </h1>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 pt-4">
               {/* Column 1 */}
               <div className="flex flex-col gap-2">
                 <a

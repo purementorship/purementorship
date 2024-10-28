@@ -25,60 +25,70 @@ const Team = () => {
       picture: aadityPicture,
       school: "University of Maryland",
       domain: "Cybersecurity",
+      linkedin: "https://www.linkedin.com/in/aadity-j-a5952319a/",
     },
     {
       name: "Anisha K.",
       picture: anishaPicture,
       school: "Duke University",
       domain: "Sustainable Energy",
+      linkedin: "https://www.linkedin.com/in/anishakrishnakumar/",
     },
     {
       name: "Esther C.",
       picture: estherPicture,
       school: "Calflin University",
       domain: "Cybersecurity",
+      linkedin: "https://www.linkedin.com/in/esther-chukwunwike/",
     },
     {
       name: "Haruna O.",
       picture: harunaPicture,
       school: "University of Houston-Victoria",
       domain: "Entrepreneurship",
+      linkedin: "https://www.linkedin.com/in/haruna-oseni-b690191b8/",
     },
     {
       name: "Joseph B.",
       picture: josephPicture,
       school: "San Jose State University",
       domain: "Space",
+      linkedin: "https://www.linkedin.com/in/bruno1999/",
     },
     {
       name: "Leo S.",
       picture: leoPicture,
       school: "Virginia Tech University",
       domain: "GenAI",
+      linkedin: "https://www.linkedin.com/in/pawon-s-563599120/",
     },
     {
       name: "Michael S.",
       picture: michaelPicture,
       school: "San Jose State University",
       domain: "Fullstack Engineering",
+      linkedin: "https://www.linkedin.com/in/michael-shahtout/",
     },
     {
       name: "Riddhi K.",
       picture: riddhiPicture,
       school: "University of Nevada",
       domain: "Economics",
+      linkedin: "https://www.linkedin.com/in/riddhikhincha/",
     },
     {
       name: "Romina T.",
       picture: rominaPicture,
       school: "Carnegie Mellon University",
       domain: "Data Science",
+      linkedin: "https://www.linkedin.com/in/rominatello/",
     },
     {
       name: "Thenu S.",
       picture: thenuPicture,
       school: "San Jose State University",
-      domain: "Engineering Management, Marketing",
+      domain: "Engineering Technology, Business",
+      linkedin: "https://www.linkedin.com/in/dianesenthil/",
     },
   ];
 
@@ -127,7 +137,7 @@ const Team = () => {
         </div>
       </section>
       <section className="flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-6 md:p-10 w-full md:w-3/4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 p-4 w-full md:w-5/6">
           {mentors.map((mentor, i) => (
             <motion.div
               key={i}
@@ -141,25 +151,28 @@ const Team = () => {
             >
               <Card className="hover:shadow-lg">
                 <CardHeader>
-                  <div className="w-full h-full overflow-hidden rounded-t-lg">
+                  <div className="w-full h-full overflow-hidden">
                     <img
                       src={mentor.picture}
-                      className="w-full h-full object-cover object-bottom"
+                      className="w-full h-full object-cover rounded-lg"
                       alt={`${mentor.name}'s picture`}
                     />
                   </div>
                 </CardHeader>
                 <CardContent className="text-center">
                   <CardTitle className="text-lg font-semibold">
-                    {mentor.name}
+                    <a
+                      href={mentor.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:underline"
+                    >
+                      {mentor.name}
+                    </a>
                   </CardTitle>
                   <CardDescription>
-                    <div className="text-sm text-gray-600">
-                      {mentor.school}
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      {mentor.domain}
-                    </div>
+                    <div className="text-sm text-gray-600">{mentor.school}</div>
+                    <div className="text-sm text-gray-600">{mentor.domain}</div>
                   </CardDescription>
                 </CardContent>
               </Card>
