@@ -25,14 +25,14 @@ const Team = () => {
       picture: aadityPicture,
       school: "University of Maryland",
       domain: "Cybersecurity",
-      linkedin: "https://www.linkedin.com/in/aadityjhttps://www.linkedin.com/in/aadity-j-a5952319a/",
+      linkedin: "https://www.linkedin.com/in/aadity-j-a5952319a/",
     },
     {
       name: "Anisha K.",
       picture: anishaPicture,
       school: "Duke University",
       domain: "Sustainable Energy",
-      linkedin: "https://www.linkedin.com",
+      linkedin: "https://www.linkedin.com/in/anishakrishnakumar/",
     },
     {
       name: "Esther C.",
