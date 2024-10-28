@@ -8,38 +8,25 @@ import {
 
 export default function HistoryCarousel() {
   return (
-    <div className="bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25 p-10">
+    <div className="bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25 p-4 md:p-16">
+      <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl text-center">
+        Brief History of Pure Mentorship
+      </h1>
       <Carousel className="flex h-full w-full items-center justify-center">
         <CarouselContent>
-          <CarouselItem className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-10">
-            <div className="text-4xl font-bold text-pmpurple tracking-tight text-center md:w-1/4 md:pl-32">
+          <CarouselItem className="flex flex-col items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4  pb-8">
+            <div className="text-3xl font-bold text-pmpurple tracking-tight text-center lg:w-1/3">
               September 2022
             </div>
-            <div className="flex flex-col items-center md:w-3/4">
-              <div className="bg-blue-500 w-64 h-64 mb-2 flex items-center justify-center text-white font-bold">
-                IMAGE
-              </div>
-              <div className="text-center text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Thenu drafted ideas on why mentorship is important, and how she
-                will bring service to others. Soonafter, the vision and mission
-                for Pure Mentorship was established.
-              </div>
-            </div>
-          </CarouselItem>
-
-          <CarouselItem className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-10">
-            <div className="text-4xl font-bold text-pmpurple tracking-tight text-center md:w-1/4 md:pl-32">
-              November 2022
-            </div>
-            <div className="flex flex-col items-center md:w-3/4">
+            <div className="flex flex-col items-center lg:w-1/3">
               <div className="bg-green-500 w-64 h-64 mb-2 flex items-center justify-center text-white font-bold">
                 IMAGE
               </div>
-              <div className="text-center text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Thenu drafted ideas on why mentorship is important, and how she
-                will bring service to others. Soonafter, the vision and mission
-                for Pure Mentorship was established.
-              </div>
+            </div>
+            <div className="text-lg text-gray-600 dark:text-gray-300 lg:w-1/3 lg:pr-8 text-center">
+              Thenu drafted ideas on why mentorship is important, and how she
+              will bring service to others. Soon after, the vision and mission
+              for Pure Mentorship was established.
             </div>
           </CarouselItem>
         </CarouselContent>
