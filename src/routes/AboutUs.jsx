@@ -42,15 +42,14 @@ export default function AboutUs() {
   return (
     <PageLayout className="flex flex-col h-screen snap-y snap-mandatory">
       {/* WHO ARE WE */}
-      <section className="w-full py-8">
-        <div className="container grid items-center gap-4 px-4 md:grid-cols-2 lg:gap-8">
+        <div className="w-full py-8 container grid items-center gap-4 px-4 md:grid-cols-2 lg:gap-8">
           <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInAnimationVariants}
             className="grid justify-items-center lg:flex lg:flex-row pb-6 w-full
-          justify-center items-center gap-10"
+          justify-center items-center"
           >
             <img
               alt="Image"
@@ -60,7 +59,6 @@ export default function AboutUs() {
               width={550}
             />
           </motion.div>
-
           <motion.div
             initial="initial"
             whileInView="animate"
@@ -87,12 +85,11 @@ export default function AboutUs() {
             </div>
           </motion.div>
         </div>
-      </section>
 
       <HistoryCarousel />
 
       {/* MEET THE FOUNDER  */}
-      <div className="flex w-full items-center justify-between py-6">
+      <div className="flex w-full items-center justify-between py-8">
         <div className="container mx-auto flex max-w-6xl flex-col-reverse items-center gap-4 px-4 md:flex-row lg:gap-8 lg:flex-row lg:justify-between">
           {/* Text Section */}
           <motion.div
@@ -138,7 +135,7 @@ export default function AboutUs() {
       </div>
 
       {/* BLOG */}
-      <section className="w-full py-10 bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25">
+      <section className="w-full py-8 bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25">
         <div className="container mx-auto grid items-start gap-12 px-4 md:px-6 md:grid-cols-2 lg:gap-10">
           {/* Text Section: Explore Our Blog */}
           <motion.div
