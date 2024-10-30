@@ -77,25 +77,25 @@ export default function HistoryCarousel() {
               className="flex flex-col items-center pb-2 lg:pb-0 lg:flex-row lg:space-x-40"
             >
               <div className="flex flex-col items-center lg:w-1/2 lg:p-12">
-                <div className="text-xl text-gray-600 font-bold text-center">
+                <div className="text-xl text-gray-600 font-bold text-center md:pt-8 lg:pt-0">
                   {item.date}
                 </div>
                 <div className="m-4 lg:my-0 flex items-center justify-center text-white font-bold lg:hidden">
                   <img
                     src={item.image}
                     alt="carousel image"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
                 <div className="text-center text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   {item.description}
                 </div>
               </div>
-              <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/2">
+              <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/2 pr-20">
                 <img
                   src={item.image}
                   alt="carousel image"
-                  className="w-full h-full object-cover pr-20"
+                  className="w-full h-full object-cover rounded-xl"
                 />
               </div>
             </CarouselItem>
