@@ -140,7 +140,7 @@ export default function HomePage() {
               <CarouselContent>
                 <CarouselItem className="flex justify-center">
                   <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">
+                    <h2 className="text-3xl font-bold text-white px-2">
                       "[Mentorship] is really important because giving out your
                       experience and knowledge of how you're able to tap into
                       the industry is a pure sense of giving back to the
@@ -153,7 +153,7 @@ export default function HomePage() {
                 </CarouselItem>
                 <CarouselItem className="flex justify-center">
                   <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">
+                    <h2 className="text-3xl font-bold text-white px-2">
                       "Mentorship can influence a mentee's life for the better
                       in a professional, academic, or personal aspect. Having a
                       mentor that you look up to is motivating and influential
@@ -166,7 +166,7 @@ export default function HomePage() {
                 </CarouselItem>
                 <CarouselItem className="flex justify-center">
                   <div className="flex h-full max-w-5xl flex-col items-center text-center justify-center space-y-2 p-6">
-                    <h2 className="text-3xl font-bold text-white">
+                    <h2 className="text-3xl font-bold text-white px-2">
                       "Mentors have played a significant role in helping me
                       advance through each step of my professional journey –
                       right since I was an aspiring chemical engineer, to now
