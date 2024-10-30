@@ -91,7 +91,7 @@ export default function HomePage() {
       {/* PAGE 2: LOGO GARDEN */}
       <section className="flex items-center justify-center bg-gray-100 snap-start">
         <div className="container w-full flex flex-col items-center lg:m-16">
-          <h2 className="text-center text-2xl md:text-3xl pb-5">
+          <h2 className="text-center text-2xl md:text-3xl pb-5 pt-5 md:pt-0">
             Our mentors have worked with:
           </h2>
           <motion.div
