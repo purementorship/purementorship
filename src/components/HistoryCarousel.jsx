@@ -5,6 +5,7 @@ import {
   CarouselNext,
   Carousel,
 } from "@/components/ui/carousel";
+import { motion } from "framer-motion";
 import september2022 from "@/assets/history/september2022.png";
 import november2022 from "@/assets/history/november2022.png";
 import december2022 from "@/assets/history/december2022.png";
@@ -63,21 +64,41 @@ const carouselItems = [
   },
 ];
 
+const fadeInAnimation = {
+  initial: { opacity: 0, y: 100 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.1 },
+  },
+};
+
 export default function HistoryCarousel() {
   return (
     <div className="bg-gradient-to-r from-white to-[#ff0000]/25 dark:from-gray-950 dark:to-[#ff0000]/25 p-8 md:py-8 lg:px-12">
-      <h1 className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl text-center pb">
+      <motion.h1
+        initial="initial"
+        animate="animate"
+        variants={fadeInAnimation}
+        className="text-4xl font-bold text-pmpurple tracking-tight md:text-4xl lg:text-5xl text-center"
+      >
         Brief History of Pure Mentorship
-      </h1>
-      <Carousel className="flex h-full w-full items-center justify-center -mt-4">
+      </motion.h1>
+           <motion.h1
+        initial="initial"
+        animate="animate"
+        variants={fadeInAnimation}
+        
+      >
+      <Carousel className="flex h-full w-full items-center justify-center">
         <CarouselContent>
           {carouselItems.map((item, index) => (
             <CarouselItem
               key={index}
-              className="flex flex-col items-center pb-2 lg:pb-0 lg:flex-row lg:space-x-40"
+              className="flex flex-col items-center lg:flex-row lg:space-x-40"
             >
               <div className="flex flex-col items-center lg:w-1/2 lg:p-12">
-                <div className="text-xl text-gray-600 font-bold text-center md:pt-8 lg:pt-0">
+                <div className="text-xl text-gray-600 font-bold text-center pt-8 lg:pt-0">
                   {item.date}
                 </div>
                 <div className="m-4 lg:my-0 flex items-center justify-center text-white font-bold lg:hidden">
@@ -109,6 +130,7 @@ export default function HistoryCarousel() {
           <ChevronRightIcon className="h-5 w-5" />
         </CarouselNext>
       </Carousel>
+      </motion.h1>
     </div>
   );
 }
