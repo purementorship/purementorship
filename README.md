@@ -23,51 +23,46 @@ The primary goal of this internship project was to rebuild the Pure Mentorship c
 - shadcn/ui
 
 ## Current Project State
-As of July 2024, the website rebuild has reached the following state:
+As of November 2024, the website rebuild has reached the following state:
 
 1. Functional static website
 2. Modern architecture implemented
 3. Core pages and navigation in place
-4. Boilerplate setup for blog page (not fully implemented)
+4. Published on purementorship.com
 
 ## Completed Tasks
 - Set up React project structure
 - Implemented Tailwind CSS for styling
 - Created main page layouts
 - Established basic navigation
+- Populated missing content
+- Website deployed on Netlify
+- Connected to Porkbun domain
+- Blog section removed and a link to the old blog was added
+- Responsive design
 
 ## Pending Tasks
 The following items need attention from future interns:
 
-1. Content Population:
-   - Add missing links
-   - Insert remaining images
-   - Complete detail sections across the site
-
-2. Blog Section:
-   - The blog currently has a static component structure. Meaning that there is no external source generating the blog section. For the future it would be efficient to pull the data externally and render it dynamically.
-   - Discuss blog data source with Diane.
-
-3. Dynamic Content:
+1. Dynamic Content:
    - Identify areas where dynamic content could enhance user experience
    - Implement API calls to serve dynamic content where appropriate
 
-4. Testing and Optimization:
-   - Conduct thorough testing across different devices and browsers
+2. Testing and Optimization:
    - Optimize performance, especially image loading and page speed
-
-5. Documentation:
-   - Create or update technical documentation for the new architecture
-   - Document any custom components or functions created during development
 
 ## Future Considerations
 1. Image Optimization: When the website first loads the images take some time to render. Consider optimizing this. 
-2. Missing content: domain name, carousel images, quotes, and calendly links for mentor / mentee applications. 
+2. Calendly links for mentor / mentee applications. 
 
 ## Handover Notes
-1. Development environment setup instructions can be found in the README.md file
-2. The current hosting solution is: https://purementorship.netlify.app/
+1. Development environment setup instructions can be found in the README.md file.
+2. Unable to dynamically retrieve blog content using Wix API due to API restrictions. Wix API does not allow requests from browser and only return plain text content.
+3. The website is live on https://purementorship.com/. DNS Records are configured on Porkbun to point to Netlify servers.
 
+![porkbun DNS](src/assets/porkbun.png)
+
+4. SSL certificates for https are configured on Netlify.
 
 ## Running the Project Locally
 
@@ -97,6 +92,7 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your syst
 
 - [@Cole Hartman](https://github.com/Cole-Hartman)
 - [@Noah Kim](https://github.com/boatnoah)
+- [@Ingrid Miranda](https://github.com/ingridmidia)
 
 
 
