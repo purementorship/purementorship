@@ -11,6 +11,7 @@ import december2022 from "@/assets/history/december2022.png";
 import january2023 from "@/assets/history/january2023.png";
 import june2023 from "@/assets/history/june2023.png";
 import august2023 from "@/assets/history/august2023.png";
+import january2024 from "@/assets/history/january2024.png";
 
 const carouselItems = [
   {
@@ -52,7 +53,7 @@ const carouselItems = [
     date: "January 2024",
     description:
       "The interns were able to accomplish many things. They created the new official mentee and mentor handbook, the first newsletter, managed Pure Mentorship's social media platforms, and started work on redoing our old website.",
-    image: "/path/to/image2.jpg",
+    image: january2024,
   },
   {
     date: "August 2024",
