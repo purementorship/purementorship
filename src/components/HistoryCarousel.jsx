@@ -41,7 +41,7 @@ const carouselItems = [
   {
     date: "June 2023",
     description:
-      "Our team expanded with a UI/UX designer, a blog writer, and nine interns who achieved much. We also had eight student leaders, volunteer members from high school to suport outreach. Read our intern letters and blog posts on our previous blog.",
+      "Our executive team got a lot bigger and our 10 interns accomplished many things. We also had eight student leaders, volunteer members from high school to suport outreach. Read our intern letters and blog posts on our previous blog.",
     image: june2023,
   },
   {
