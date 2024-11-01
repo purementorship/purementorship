@@ -13,6 +13,7 @@ import january2023 from "@/assets/history/january2023.png";
 import june2023 from "@/assets/history/june2023.png";
 import august2023 from "@/assets/history/august2023.png";
 import january2024 from "@/assets/history/january2024.png";
+import august2024 from "@/assets/history/august2024.png";
 
 const carouselItems = [
   {
@@ -41,7 +42,7 @@ const carouselItems = [
   {
     date: "June 2023",
     description:
-      "Our executive team got a lot bigger and our 10 interns accomplished many things. We also had eight student leaders, volunteer members from high school to suport outreach. Read our intern letters and blog posts on our previous blog.",
+      "Our executive team got a lot bigger and our 10 interns accomplished many things. We also had eight student leaders, volunteer members from high school to support outreach. Read our intern letters and blog posts on our previous blog.",
     image: june2023,
   },
   {
@@ -60,7 +61,7 @@ const carouselItems = [
     date: "August 2024",
     description:
       "With hopes of having a larger impact and more reach, Thenu decided to take a step back and put the program on hiatus. Currently she is working with a new executive advisor to refine Pure Mentorship's overall strategy. This partnership will bring out a new program model soon!",
-    image: "/path/to/image2.jpg",
+    image: august2024,
   },
 ];
 
@@ -84,53 +85,60 @@ export default function HistoryCarousel() {
       >
         Brief History of Pure Mentorship
       </motion.h1>
-           <motion.h1
+      <motion.div
         initial="initial"
         animate="animate"
         variants={fadeInAnimation}
-        
       >
-      <Carousel className="flex h-full w-full items-center justify-center">
-        <CarouselContent>
-          {carouselItems.map((item, index) => (
-            <CarouselItem
-              key={index}
-              className="flex flex-col items-center lg:flex-row lg:space-x-40"
-            >
-              <div className="flex flex-col items-center lg:w-1/2 lg:p-12">
-                <div className="text-xl text-gray-600 font-bold text-center pt-8 lg:pt-0">
-                  {item.date}
+        <Carousel className="flex h-full w-full items-center justify-center">
+          <CarouselContent>
+            {carouselItems.map((item, index) => (
+              <CarouselItem
+                key={index}
+                className="flex flex-col items-center lg:flex-row lg:space-x-40"
+              >
+                <div className="flex flex-col items-center lg:w-1/2 lg:p-12">
+                  <div className="text-xl text-gray-600 font-bold text-center pt-8 lg:pt-0">
+                    {item.date}
+                  </div>
+                  <div className="m-4 lg:my-0 flex items-center justify-center text-white font-bold lg:hidden">
+                    <img
+                      src={item.image}
+                      alt="carousel image"
+                      className={`object-cover rounded-xl ${
+                        index === carouselItems.length - 1
+                          ? "w-full h-3/4"
+                          : "w-full h-full"
+                      }`}
+                    />
+                  </div>
+                  <div className="text-center text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                    {item.description}
+                  </div>
                 </div>
-                <div className="m-4 lg:my-0 flex items-center justify-center text-white font-bold lg:hidden">
+                <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/2 pr-20">
                   <img
                     src={item.image}
                     alt="carousel image"
-                    className="w-full h-full object-cover rounded-xl"
+                    className={`object-cover rounded-xl ${
+                      index === carouselItems.length - 1
+                        ? "w-[60%] h-[60%]"
+                        : "w-full h-full"
+                    }`}
                   />
                 </div>
-                <div className="text-center text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  {item.description}
-                </div>
-              </div>
-              <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/2 pr-20">
-                <img
-                  src={item.image}
-                  alt="carousel image"
-                  className="w-full h-full object-cover rounded-xl"
-                />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
 
-        <CarouselPrevious className="absolute -left-6 top-1/2 -translate-y-1/2 rounded-full bg-white/50 p-2 text-gray-900 shadow-md transition-all hover:bg-white dark:bg-gray-950/50 dark:text-gray-50 dark:hover:bg-gray-800">
-          <ChevronLeftIcon className="h-5 w-5" />
-        </CarouselPrevious>
-        <CarouselNext className="absolute -right-6 top-1/2 -translate-y-1/2 rounded-full bg-white/50 p-2 text-gray-900 shadow-md transition-all hover:bg-white dark:bg-gray-950/50 dark:text-gray-50 dark:hover:bg-gray-800">
-          <ChevronRightIcon className="h-5 w-5" />
-        </CarouselNext>
-      </Carousel>
-      </motion.h1>
+          <CarouselPrevious className="absolute -left-6 top-1/2 -translate-y-1/2 rounded-full bg-white/50 p-2 text-gray-900 shadow-md transition-all hover:bg-white dark:bg-gray-950/50 dark:text-gray-50 dark:hover:bg-gray-800">
+            <ChevronLeftIcon className="h-5 w-5" />
+          </CarouselPrevious>
+          <CarouselNext className="absolute -right-6 top-1/2 -translate-y-1/2 rounded-full bg-white/50 p-2 text-gray-900 shadow-md transition-all hover:bg-white dark:bg-gray-950/50 dark:text-gray-50 dark:hover:bg-gray-800">
+            <ChevronRightIcon className="h-5 w-5" />
+          </CarouselNext>
+        </Carousel>
+      </motion.div>
     </div>
   );
 }
